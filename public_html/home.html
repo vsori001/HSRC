@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Welcome to Holy Spirit Retreat Center!</title>
+		<link rel="stylesheet" href="css/button.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="scripts/popups.js"></script>
+    <?php include("scripts/nav.php"); ?>
+	</head>
+	
+	<body id="leaves">	
+		<div class="header" />  
+		
+		<div id="navi">
+      <?php show_nav(); ?>
+		</div><!--navi-->
+		
+		<div id="wrapper">
+			<div class="left-home">
+				<div id="left-home-content">
+					<img src="img/scroll_home.png" alt="Mission Statement" width="349" height="448" border="0" />
+				</div><!--left-home-content-->
+			</div><!--left-home-->
+			
+			<div class="right-home">
+				<div id="right-home-content">
+					What's New at HSRC?
+					<div id="home-updates">
+						<script language="JavaScript1.2">				
+							//Presentational Slideshow Script- By Dynamic Drive
+							//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+							//This credit MUST stay intact for legal use
+							
+							var slideshow_width='300px' //SET SLIDESHOW WIDTH (set to largest image's width if multiple dimensions exist)
+							var slideshow_height='392px' //SET SLIDESHOW HEIGHT (set to largest image's height if multiple dimensions exist)
+							var pause=7000 //5000 //SET PAUSE BETWEEN SLIDE (2000=2 seconds)
+							var slidebgcolor="white"
+							
+							var getADate = new Date();
+							var month = getADate.getMonth() + 1;
+							var date = getADate.getDate();
+							
+							//SET IMAGE PATHS. Extend or contract array as needed
+							if( month == 3 ){
+								if(date <= 11 ){
+									var dropimages=new Array()
+									dropimages[0]="img/events/2014/womenAtTheWell/home-waw.jpg"
+									dropimages[1]="img/events/2014/empowermentOfTheHolySpirit/home_empower.jpg"
+									dropimages[2]="img/events/2014/holyWeek/home-holyweek.jpg"		
+									var droplinks=new Array()
+									//SET IMAGE URLs. Use "" if you wish particular image to NOT be linked:
+									droplinks[0]="javascript: openWaw()"
+									droplinks[1]="scripts/empowerment.php"
+									droplinks[2]="javascript: openHolyWeek()"
+								}
+								else if(date > 11 || date <= 28){
+									var dropimages=new Array()
+									dropimages[0]="img/events/2014/empowermentOfTheHolySpirit/home_empower.jpg"	
+									dropimages[1]="img/events/2014/womenAtTheWell/home-wawApr.jpg"
+									dropimages[2]="img/home-holyweek.jpg"	
+									var droplinks=new Array()
+									//SET IMAGE URLs. Use "" if you wish particular image to NOT be linked:
+									droplinks[0]="scripts/empowerment.php"
+									droplinks[1]="javascript: openWaw()"
+									droplinks[2]="javascript: openHolyWeek()"
+								}
+								else{
+									var dropimages=new Array()
+									dropimages[0]="img/events/2014/womenAtTheWell/home-wawApr.jpg"
+									dropimages[1]="img/home-holyweek.jpg"		
+									var droplinks=new Array()
+									//SET IMAGE URLs. Use "" if you wish particular image to NOT be linked:
+									droplinks[0]="javascript: openWaw()"
+									droplinks[1]="javascript: openHolyWeek()"	
+								}
+							}
+							else if( month == 4 ){
+								if(date <= 8 ){
+									var dropimages=new Array()
+									dropimages[0]="img/events/2014/womenAtTheWell/home-wawApr.jpg"
+									dropimages[1]="img/home-holyweek.jpg"		
+									var droplinks=new Array()
+									//SET IMAGE URLs. Use "" if you wish particular image to NOT be linked:
+									droplinks[0]="javascript: openWaw()"
+									droplinks[1]="javascript: openHolyWeek()"	
+								}
+								else if(date > 8 || date <= 13){
+									var dropimages=new Array()
+									dropimages[0]="img/home-holyweek.jpg"		
+									var droplinks=new Array()
+									//SET IMAGE URLs. Use "" if you wish particular image to NOT be linked:
+									droplinks[0]="javascript: openHolyWeek()"	
+								}
+								else{
+									var dropimages=new Array()
+									dropimages[0]="img/events/2014/womenAtTheWell/home-wawMay.jpg"
+									var droplinks=new Array()
+									//SET IMAGE URLs. Use "" if you wish particular image to NOT be linked:
+									droplinks[0]="javascript: openWaw()"
+								}
+							}
+							else if( month > 4 ){
+								var dropimages=new Array()
+								dropimages[0]="img/events/2014/empowermentOfTheHolySpirit/home_empower.jpg"	
+								var droplinks=new Array()
+								//SET IMAGE URLs. Use "" if you wish particular image to NOT be linked:
+								droplinks[0]="scripts/empowerment.php"
+							}
+							
+							
+												
+							////NO need to edit beyond here/////////////
+							
+							var preloadedimages=new Array()
+							for (p=0;p<dropimages.length;p++)
+							{
+								preloadedimages[p]=new Image()
+								preloadedimages[p].src=dropimages[p]
+							}
+							
+							var ie4=document.all
+							var dom=document.getElementById
+							
+							if (ie4||dom)
+								document.write('<div style="position:relative;width:'+slideshow_width+';height:'+slideshow_height+';overflow:hidden"><div id="canvas0" style="position:absolute;width:'+slideshow_width+';height:'+slideshow_height+';background-color:'+slidebgcolor+';left:-'+slideshow_width+'"></div><div id="canvas1" style="position:absolute;width:'+slideshow_width+';height:'+slideshow_height+';background-color:'+slidebgcolor+';left:-'+slideshow_width+'"></div></div>')
+							else
+								document.write('<a href="javascript:rotatelink()"><img name="defaultslide" src="'+dropimages[0]+'" border=0></a>')
+							
+							var curpos=parseInt(slideshow_width)*(-1)
+							var degree=10
+							var curcanvas="canvas0"
+							var curimageindex=linkindex=0
+							var nextimageindex=1
+													
+							function movepic(){
+								if (curpos<0){
+									curpos=Math.min(curpos+degree,0)
+									tempobj.style.left=curpos+"px"
+								}
+								else{			
+									clearInterval(dropslide)
+									nextcanvas=(curcanvas=="canvas0")? "canvas0" : "canvas1"
+									tempobj=ie4? eval("document.all."+nextcanvas) : document.getElementById(nextcanvas)
+									var slideimage='<img src="'+dropimages[curimageindex]+'" border=0>'
+									tempobj.innerHTML=(droplinks[curimageindex]!="")? '<a href="'+droplinks[curimageindex]+'">'+slideimage+'</a>' : slideimage
+									nextimageindex=(nextimageindex<dropimages.length-1)? nextimageindex+1 : 0
+									setTimeout("rotateimage()",pause)
+								}
+							}
+							
+							function rotateimage(){
+								if (ie4||dom){
+									resetit(curcanvas)
+									var crossobj=tempobj=ie4? eval("document.all."+curcanvas) : document.getElementById(curcanvas)
+									crossobj.style.zIndex++
+									var temp='setInterval("movepic()",50)'
+									dropslide=eval(temp)
+									curcanvas=(curcanvas=="canvas0")? "canvas1" : "canvas0"
+								}
+								else
+									document.images.defaultslide.src=dropimages[curimageindex]
+									linkindex=curimageindex
+									curimageindex=(curimageindex<dropimages.length-1)? curimageindex+1 : 0
+							}
+							
+							function rotatelink(){
+								if (droplinks[linkindex]!="")
+									window.location=droplinks[linkindex]
+							}
+							
+							function resetit(what){
+								curpos=parseInt(slideshow_width)*(-1)
+								var crossobj=ie4? eval("document.all."+what) : document.getElementById(what)
+								crossobj.style.left=curpos+"px"
+							}
+							
+							function startit(){
+								var crossobj=ie4? eval("document.all."+curcanvas) : document.getElementById(curcanvas)
+								crossobj.innerHTML='<a href="'+droplinks[curimageindex]+'"><img src="'+dropimages[curimageindex]+'" border=0></a>'
+								rotateimage()
+							}
+							
+							if (ie4||dom)
+								window.onload=startit
+							else
+								setInterval("rotateimage()",pause)						
+						</script>
+					</div><!--home-updates-->
+				</div><!--right-home-content-->
+			</div><!--right-home-->
+			<div class="push"></div><!--used to position the footer-->
+		</div><!--wrapper-->
+		
+		<div class="footer">
+			<a href="home.html" class="no-under">Holy Spirit Retreat Center</a> || 4316 Lanai Rd. Encino, CA 91346 || (818) 784 - 4515<br />
+			<div class="footer-foot">Website designed and maintained by Vanessa Soria</div>
+		</div><!--footer-->	
+		
+	</body>
+</html>
