@@ -1,0 +1,607 @@
+@font-face 
+{
+	font-family: 'SymbolSignsBasisset';
+	src: url('../fonts/calendar-month/symbol-signs-webfont.eot');
+	src: url('../fonts/calendar-month/symbol-signs-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/calendar-month/symbol-signs-webfont.woff') format('woff'),
+		 url('../fonts/calendar-month/symbol-signs-webfont.ttf') format('truetype'),
+		 url('../fonts/calendar-month/symbol-signs-webfont.svg#SymbolSignsBasisset') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'QikkiRegRegular';
+	src: url('../fonts/Qarmic_sans_Abridged-webfont.eot');
+	src: url('../fonts/Qarmic_sans_Abridged-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Qarmic_sans_Abridged-webfont.woff') format('woff'),
+		 url('../fonts/Qarmic_sans_Abridged-webfont.ttf') format('truetype'),
+		 url('../fonts/Qarmic_sans_Abridged-webfont.svg#QikkiRegRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Calendar Styling */
+
+#cal-container
+{
+	margin: 230px 0 0 300px;
+}
+
+#month-sept
+{
+	font-size: 28pt;
+	font-family: QikkiRegRegular;
+	margin-left: 210px;
+	padding-bottom: 10px;
+}
+
+#month
+{
+	font-size: 28pt;
+	font-family: QikkiRegRegular;
+	margin-left: 300px;
+	padding-bottom: 10px;
+}
+
+#calendar
+{
+	border-collapse: collapse;
+	width: 840px;
+	border: 1px solid #333333;
+}
+
+#weekdays
+{
+	height: 30px;
+	width: 110px;
+}
+
+#days
+{
+	vertical-align: top;
+	height: 130px;
+	width: 120px;
+	empty-cells: show;
+}
+
+#emptydays
+{
+	vertical-align: top;
+	background-color:#CED8B1;
+	color: #000000;
+	height: 110px;
+	width: 110px;
+}
+
+#weekdays, #days, #emptydays
+{
+	border-collapse: collapse;
+	border: 1px solid #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font: bold;
+}
+
+#hosted
+{
+	height: 13px;
+	width: 120px;
+	color: #663300;
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: 5px;
+}
+
+#cal-bottom
+{
+	width: 800px;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.cal-events
+{
+	text-decoration: none;
+	font-size: 10px;
+}
+
+a.cal-events:hover
+{
+	text-decoration: underline;
+}
+
+/* Popup Events Styling */
+
+#events
+{
+	text-align: center;
+}
+
+#events-header
+{
+	font-family: QikkiRegRegular;
+	font-size: 18pt;
+	text-decoration: underline;
+}
+
+#events-header-info
+{
+	font-family: QikkiRegRegular;
+	font-size: 14pt;
+}
+
+#events-content
+{
+	font-family: TypoSlabserifLightRegular;
+	font-size: 14pt;	
+	width: 560px;
+	height: auto;
+	text-align: center;
+	margin: 30px auto;
+	padding-bottom:30px;
+}
+
+#events-series-bg
+{
+	background-color: #B3D9FF;
+	width:100%;
+}
+
+#events-one-bg
+{
+	background-color: #f6ab96;
+}
+
+#events-bg
+{
+	background-color: #A172FE;
+}
+
+#events-img-advent, #events-img-festival, #events-img-cpgrp, #events-img-cpweekend, #events-img-bound, #events-img-disc, #events-img-expect, #events-img-lab, #events-img-new, #events-img-oa, #events-img-color, #events-img-thom, #events-img-wellness, #events-img-alleluia, #events-img-vespers, #events-img-xmas, #events-img-journey, #events-img-communication, #events-img-cross, #events-img-united, #events-img-livingThrough, #events-img-silentRe, #events-img-silentSat, #events-img-artSacred, #events-img-eightDayPost, #events-img-eightDayDir, #events-img-eightDayDir2, #events-img-heartPrints, #events-img-holyWeek, #events-img-mensOnly, #events-img-threeGraces, #events-img-nativeAmerican, #events-img-imageImagination, #events-img-adventRenewal, #events-img-crones, #events-img-reaching, #events-img-vatican, #events-img-contemplative, #events-img-sophia, #events-img-school, #events-img-newEvangelization, #events-img-wrestling, #events-img-writing, #events-img-celticSpirituality, #events-img-holySpirit,#events-img-wawSummer, .eventsIMG
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#events-img-festival
+{
+	width: 862px;
+	height: 562px;
+	margin-top: -281px;
+	margin-left: -431px;
+}
+
+#events-img-cpgrp
+{
+	width: 592px;
+	height: 496px;
+	margin-top: -248px;
+	margin-left: -296px;	
+}
+
+#events-img-cpintro
+{
+	width: 600px;
+	height: 390px;
+	margin-top: -195px;
+	margin-left: -300px;	
+}
+
+#events-img-cpweekend
+{
+	width: 550px;
+	height: 550px;
+	margin-top: -275px;
+	margin-left: -275px;
+}
+
+#events-img-bound
+{
+	width: 568px;
+	height: 456px;
+	margin-top: -228px;
+	margin-left: -284px;
+}
+
+#events-img-disc
+{
+	width: 584px;
+	height: 536px;
+	margin-top: -268px;
+	margin-left: -292px;
+}
+
+#events-img-expect
+{
+	width: 600px;
+	height: 555px;
+	margin-top: -260px;
+	margin-left: -300px;
+}
+
+#events-img-lab
+{
+	width: 586px;
+	height: 512px;
+	margin-top: -256px;
+	margin-left: -293px;
+}
+
+#events-img-oa
+{
+	width: 572px;
+	height: 486px;
+	margin-top: -243px;
+	margin-left: -286px;
+}
+
+#events-img-color
+{
+	width: 600px;
+	height: 536px;
+	margin-top: -250px;
+	margin-left: -300px;	
+}
+
+#events-img-thom
+{
+	width: 596px;
+	height: 474px;
+	margin-top: -237px;
+	margin-left: -298px;
+}
+
+#events-img-wellness
+{
+	width: 600px;
+	height: 424px;
+	margin-top: -212px;
+	margin-left: -300px;
+}
+
+#events-img-alleluia
+{
+	width: 566px;
+	height: 396px;
+	margin-top: -198px;
+	margin-left: -283px;
+}
+
+#events-img-xmas
+{
+	width: 596px;
+	height: 630px;
+	margin-top: -315px;
+	margin-left: -298px;
+}
+
+#events-img-vespers
+{
+	width: 460px;
+	height: 630px;
+	margin-top: -315px;
+	margin-left: -230px;
+}
+
+#events-img-journey
+{
+	width: 492px;
+	height: 500px;
+	margin-top: -250px;
+	margin-left: -246px;
+}
+
+#events-img-communication
+{
+	width: 600px;
+	height: 482px;
+	margin-top: -241px;
+	margin-left: -300px;
+}
+
+#events-img-cross
+{
+	width: 624px;
+	height: 464px;
+	margin-top: -232px;
+	margin-left: -312px;
+}
+
+#events-img-united
+{
+	width: 670px;
+	height: 488px;
+	margin-top: -244px;
+	margin-left: -335px;
+}
+
+#events-img-livingThrough
+{
+	width: 650px;
+	height: 564px;
+	margin-top: -282px;
+	margin-left: -325px;
+}
+
+#events-img-silentRe
+{
+	width: 624px;
+	height: 554px;
+	margin-top: -272px;
+	margin-left: -312px;
+}
+
+#events-img-silentSat
+{
+	width: 600px;
+	height: 494px;
+	margin-top: -235px;
+	margin-left: -300px;
+}
+
+#events-img-artSacred
+{
+	width: 650px;
+	height: 464px;
+	margin-top: -232px;
+	margin-left: -325px;
+}
+
+#events-img-eightDayPost
+{
+	width: 600px;
+	height: 1070px;
+	margin-top: -271px;
+	margin-left: -315px;
+}
+
+#events-img-eightDayDir
+{
+	width: 600px;
+	height: 498px;
+	margin-top: -249px;
+	margin-left: -300px;
+}
+
+#events-img-eightDayDir2
+{
+	width: 600px;
+	height: 486px;
+	margin-top: -249px;
+	margin-left: -300px;
+}
+
+#events-img-heartPrints
+{
+	width: 600px;
+	height: 500px;
+	margin-top: -250px;
+	margin-left: -300px;
+}
+
+#events-img-holyWeek
+{
+	width: 600px;
+	height: 558px;
+	margin-top: -229px;
+	margin-left: -300px;
+}
+
+#events-img-mensOnly
+{
+	width: 634px;
+	height: 534px;
+	margin-top: -267px;
+	margin-left: -317px;
+}
+
+#events-img-threeGraces
+{
+	width: 637px;
+	height: 490px;
+	margin-top: -245px;
+	margin-left: -318px;
+}
+
+#events-img-nativeAmerican
+{
+	width: 600px;
+	height: 522px;
+	margin-top: -241px;
+	margin-left: -300px;
+}
+
+#events-img-imageImagination
+{
+	width: 600px;
+	height: 475px;
+	margin-top: -220px;
+	margin-left: -300px;
+}
+
+#events-img-adventRenewal
+{
+	width: 600px;
+	height: 429px;
+	margin-top: -214px;
+	margin-left: -300px;
+}
+
+#events-img-crones
+{
+	width: 650px;
+	height: 463px;
+	margin-top: -231px;
+	margin-left: -325px;
+}
+
+
+#events-img-reaching
+{
+	width: 600px;
+	height: 702px;
+	margin-top: -300px;
+	margin-left: -300px;
+}
+
+#events-img-vatican
+{
+	width: 600px;
+	height: 494px;
+	margin-top: -247px;
+	margin-left: -300px;
+}
+
+#events-img-sophia
+{
+	width: 600px;
+	height: 406px;
+	margin-top: -203px;
+	margin-left: -300px;
+}
+
+#events-img-contemplative
+{
+	width: 600px;
+	height: 430px;
+	margin-top: -215px;
+	margin-left: -300px;
+}
+
+#events-img-school
+{
+	width: 600px;
+	height: 504px;
+	margin-top: -252px;
+	margin-left: -300px;
+}
+
+#events-img-newEvangelization
+{
+	width: 600px;
+	height: 504px;
+	margin-top: -202px;
+	margin-left: -300px;
+}
+
+#events-img-wrestling
+{
+	width: 600px;
+	height: 520px;
+	margin-top: -240px;
+	margin-left: -300px;
+}
+
+#events-img-writing
+{
+	width: 600px;
+	height: 484px;
+	margin-top: -242px;
+	margin-left: -300px;
+}
+
+#events-img-celticSpirituality
+{
+	width: 600px;
+	height: 486px;
+	margin-top: -243px;
+	margin-left: -300px;
+}
+
+#events-img-holySpirit
+{
+	width: 600px;
+	height: 470px;
+	margin-top: -235px;
+	margin-left: -300px;
+}
+
+#events-img-wawSummer
+{
+	width: 600px;
+	height: 490px;
+	margin-top: -235px;
+	margin-left: -300px;
+}
+
+.events-img{
+	width:600px;
+	margin-left:-300px;
+}
+
+#events-img-sabbath{
+	height:502px;
+	margin-top:-251px;
+}
+
+#events-img-beFit{
+	height:501px;
+	margin-top:-250px;
+}
+
+#events-img-monthlywomen{
+	height:552px;
+	margin-top:-246px;
+}
+
+#events-img-peaceday{
+	height:792px;
+	margin-top:-396px;
+}
+
+#events-img-herbal{
+	width:600px;
+	height:443px;
+	margin-top:-220px;
+	margin-left:-300px;
+}
+
+#events-img-advent{
+	height: 463px;
+	margin-top: -220px;
+}
+
+#events-img-jesseTree{
+	height: 470px;
+	margin-top: -235px;
+}
+
+#events-img-new
+{
+	height: 462px;
+	margin-top: -220px;
+}
+
+#events-img-marian{
+	height:619px;
+	margin-top:-304px;
+}
+
+#events-img-encounteringGod{
+	height:558px;
+	margin-top:-259px;
+}
+
+#events-img-womantowoman{
+	height:432px;
+	margin-top:-216px;
+}
+
+#events-img-sitlikeamountain{
+	height:500px;
+	margin-top:-230px;
+}
+
+#events-img-sacredCollage{
+	height:500px;
+	margin-top:-220px;
+}
+
+#events-img-waw{
+	height:692px;
+	margin-top:-300px;
+}

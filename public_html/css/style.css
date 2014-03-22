@@ -1,0 +1,679 @@
+@font-face 
+{
+	font-family: 'QikkiRegRegular';
+	src: url('../fonts/Qarmic_sans_Abridged-webfont.eot');
+	src: url('../fonts/Qarmic_sans_Abridged-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Qarmic_sans_Abridged-webfont.woff') format('woff'),
+		 url('../fonts/Qarmic_sans_Abridged-webfont.ttf') format('truetype'),
+		 url('../fonts/Qarmic_sans_Abridged-webfont.svg#QikkiRegRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+	font-family: 'TypoSlabserifLightRegular';
+	src: url('../fonts/TypoSlabserif-Light-webfont.eot');
+	src: url('../fonts/TypoSlabserif-Light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/TypoSlabserif-Light-webfont.woff') format('woff'),
+		 url('../fonts/TypoSlabserif-Light-webfont.ttf') format('truetype'),
+		 url('../fonts/TypoSlabserif-Light-webfont.svg#TypoSlabserifLightRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'SymbolSignsBasisset';
+	src: url('../fonts/calendar-month/symbol-signs-webfont.eot');
+	src: url('../fonts/calendar-month/symbol-signs-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/calendar-month/symbol-signs-webfont.woff') format('woff'),
+		 url('../fonts/calendar-month/symbol-signs-webfont.ttf') format('truetype'),
+		 url('../fonts/calendar-month/symbol-signs-webfont.svg#SymbolSignsBasisset') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General Styling */
+
+body
+{
+	width: 1024px;
+	height: 100%;
+	margin: 10px auto;
+	background-color: #ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+html
+{
+	height: 100%;
+}
+
+ul
+{
+	list-style-type:disc;
+}
+
+#back-button
+{
+	font-family: QikkiRegRegular;
+	font-size: 12px;
+	padding-bottom: 10px;	
+}
+
+#tree
+{
+	background: url(../img/radiant_bg.jpg) no-repeat fixed;
+	background-size:cover;
+}
+
+#leaves
+{
+	background: url(../img/chapeldove_bg.jpg) no-repeat fixed;
+	background-size:cover;
+}
+
+#wrapper
+{
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto -4em;
+}
+
+/* Navigation, Header, and Footer Styling */
+
+#navi
+{
+	margin: 230px auto;
+	float: left;
+}
+
+.header
+{
+	background: url('../img/logo4.jpg') no-repeat;
+	background-position: center;
+	height: 186px;
+	width: 1024px;
+	float: right;	
+	
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	border-radius: 19px;
+}
+
+.footer
+{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 4em;	
+}
+
+.push
+{
+	height: 4em;
+}
+
+.footer, .push
+{
+	clear: both;
+}
+
+.footer-foot
+{
+	font-size: 10px;
+}
+
+.no-under
+{
+	text-decoration: none;
+	color: black;
+}
+
+a.no-under:hover
+{
+	text-decoration: none;
+	color: #009933;
+}
+
+/* Home Page Styling */
+
+.right-home
+{
+	width: 330px;
+	margin: 230px 0 0 700px;
+	display: block;
+}
+
+#right-home-content
+{	
+	width: 320px;
+	height: 450px;	
+	border: 2px solid #003300;
+	float: left;
+	font-family: QikkiRegRegular;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 10px;	
+	
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	border-radius: 19px;
+}
+
+#home-updates
+{
+	padding: 20px 5px 5px 10px;
+}
+
+.left-home
+{
+	width: 400px;
+	margin: 230px 0 0 280px;
+	display: block;
+}
+
+#left-home-content
+{
+	width: 390px;
+	height: 450px;	
+	float: left;
+	text-align:center;
+}
+
+/* History Page Styling */
+
+#history-header
+{
+	font-family: QikkiRegRegular;
+	font-size: 18pt;
+}
+
+.main-history
+{
+	width: 800px;
+	margin: 230px 0 0 300px;
+	display: block;
+}
+
+#main-history-content
+{
+	width: 790px;
+	font-family: TypoSlabserifLightRegular;
+	font-size: 14pt;
+}
+
+#main-history-content img
+{
+	float: right;
+	margin: 10px 20px 20px 20px;
+	
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	border-radius: 19px 19px 19px 19px;
+	
+	-moz-box-shadow: 5px 5px 5px #666666;
+  	-webkit-box-shadow: 5px 5px 5px #666666;
+  	box-shadow: 5px 5px 5px #666666;
+}
+
+#history-bottom
+{
+	margin-left: 310px;
+	
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	border-radius: 19px 19px 19px 19px;
+	
+	-moz-box-shadow: 5px 5px 5px #666666;
+  	-webkit-box-shadow: 5px 5px 5px #666666;
+  	box-shadow: 5px 5px 5px #666666;
+}
+
+/* Services Page Styling */
+
+#services-top-content, #services-top-right-content, #services-bottom-content
+{
+	font-family: TypoSlabserifLightRegular;
+	font-size: 14pt;
+}
+
+#services-top, #services-top-right
+{
+	width: 350px;
+	display: block;
+}
+
+#services-top-content, #services-top-right-content
+{
+	width: 340px;
+	height: 250px;
+}
+
+#services-top
+{
+	margin: 230px 0 0 300px;
+}
+
+.services-header
+{
+	font-family: QikkiRegRegular;
+	font-size: 18pt;
+}
+
+#services-top-content
+{
+
+	float: left;
+	padding: 5px 5px 5px 5px;
+}
+
+#services-top-right
+{
+	margin: 230px 0 0 660px;
+}
+
+#services-top-right-content
+{
+	border-left: 1px solid #A2A251;
+	padding: 5px 5px 10px 20px;
+}
+
+#services-bottom
+{
+	width: 710px;
+	margin: 10px 0 0 300px;
+	display: block;	
+}
+
+#services-bottom-content
+{
+	width: 700px;
+	height: 350px;
+	float: left;
+	padding: 20px 5px 5px 5px;
+	border-top: 1px solid #A2A251;
+}
+
+/* About Us Page Styling */
+
+#about-intro, #about-fac, #about-accom, #about-bottompic
+{
+	margin-left: 300px;
+	font-family: TypoSlabserifLightRegular;
+	font-size: 14pt;
+}
+
+#about-fac, #about-accom
+{
+	margin-top: 20px;
+}
+
+#about-intro
+{
+	margin-top: 230px;
+}
+
+#about-pix
+{
+	float: right;
+	padding-right: 20px;
+}
+
+#about-header
+{
+	font-family: QikkiRegRegular;
+	font-size: 18pt;
+}
+
+#about-bottompic
+{
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	border-radius: 19px 19px 19px 19px;
+	
+	-moz-box-shadow: 5px 5px 5px #666666;
+  	-webkit-box-shadow: 5px 5px 5px #666666;
+  	box-shadow: 5px 5px 5px #666666;
+}
+
+/* Contact Us Page Styling */
+
+#contact-title, #contact-mainoffice, #contact-spirituald
+{
+	font-family: QikkiRegRegular;
+	font-size: 18pt;
+	text-align: center;
+}
+
+#contact-mainoffice, #contact-spirituald
+{	
+	width: 230px;
+	display: block;	
+}
+
+#contact-addr
+{
+	text-align: center;
+	font-family: TypoSlabserifLightRegular;
+	font-size: 14pt;
+}
+
+#contact-headers, #contact-web
+{
+	font-family: QikkiRegRegular;
+	font-size: 12pt;
+}
+
+#contact-mainoffice
+{
+	margin: 0 0 0 400px;
+}
+
+#contact-mainoffice-content
+{
+	width: 220px;
+	float: left;
+	padding: 10px 5px 10px 5px;	
+	border-top: 3px solid #A2A251;
+	font-family: TypoSlabserifLightRegular;
+	font-size: 12pt;
+	
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	border-radius: 19px;
+}
+
+#contact-spirituald
+{
+	margin: -35px 0 0 680px;
+}
+#contact-web
+{
+	margin: 350px 0 0 300px;
+	text-align: center;
+	font-family: TypoSlabserifLightRegular;
+	font-size: 12pt;	
+}
+
+/* Director's Letter Page, Inquiries Page, Newsletter Page, Map Page, FAQ Page Styling */
+/* Contact Us Page Styling contd */
+
+#dir-letter, #inquiries-header, #center-update, #map, #faq, #contact
+{
+	margin: 230px 0 0 300px;
+}
+
+#dir-letter img{
+	float:left;
+	padding:0px 20px 10px 0px;
+}
+
+#dir-letter h1{
+	font-family:QikkiRegRegular;
+	font-weight:normal;
+	text-align:center;
+}
+
+#dir-letter p{
+	font-family:TypoSlabserifLightRegular;
+	font-size:18px;
+	line-height:22px;
+}
+	
+#center-update
+{
+	text-align: center;
+}
+
+#center-update img:nth-of-type(1){
+	padding-top:30px!important;
+}
+
+#center-update a
+{
+	font-family: QikkiRegRegular;
+	font-size: 18pt;
+	text-decoration: none;
+	color: black;
+}
+
+#center-update a:hover
+{
+	text-decoration: none;
+	color: #009933;
+}
+
+#inquiries
+{
+	margin-left: 300px;
+	font-family:TypoSlabserifLightRegular;
+	font-size: 16pt;
+}
+
+#inquiries-header
+{	
+	font-family: QikkiRegRegular;
+	font-size: 14pt;
+}
+
+/* Facilities Page Styling */
+
+#facilities
+{
+	text-align: center;
+	margin: 230px 0 0 300px;
+	font-family: QikkiRegRegular;
+	font-size: 18pt;
+}
+
+.fac li
+{
+	list-style-type: none;
+	float: left;
+	display: inline;
+	padding-left: 10px;
+}
+
+#fac-bottom1
+{
+	margin-left: 160px;
+}
+
+/*Kitchen Slideshow Styling */
+
+#kitchen-slideshow
+{
+	float: right;
+	margin-top: 230px;
+	font-family: Trebuchet MS, Arial;
+}
+.imgCopyright
+{
+	font-size:0.7em;
+	font-style:italic;
+}
+.imgCopyright a
+{
+	color:#F00;
+}
+
+/* Override default styles */
+.dg-image-gallery
+{
+	border:3px solid #AAA;
+}
+.dg-image-gallery-previous
+{
+	background-image:url('../img/left-white.png');
+	left : 0px;
+}
+.dg-image-gallery-previous-over
+{
+	background-image:url('../img/left-white-over.png');
+}
+.dg-image-gallery-next
+{
+	background-image:url('../img/right-white.png');
+	right : 0px;
+}
+.dg-image-gallery-next-over
+{
+	background-image:url('../img/right-white-over.png');
+}
+.dg-image-gallery-next-autoplay-start
+{
+
+	background-image:url('../img/play-white.png');
+}
+.dg-image-gallery-next-autoplay-stop
+{
+
+	background-image:url('../img/pause-white.png');
+}
+.dg-image-gallery-next-autoplay-start-off
+{
+	background-image:url('img/play-white-off.png');	
+}
+.dg-image-gallery-next-autoplay-stop-off
+{
+	background-image:url('img/pause-white-off.png');
+
+}
+.dg-image-gallery-caption 
+{
+	color:#000;
+}
+.dg-image-gallery-thumbnail-highlight
+{
+	border:3px solid #AAA;
+}
+
+/* FAQ page Styling */
+
+#faq-headers
+{
+	font-family: QikkiRegRegular;
+	font-size: 18pt;
+}
+
+#faq
+{
+	font-family: TypoSlabserifLightRegular;
+	font-size: 14pt;
+}
+
+/* Donations */
+
+#donation-box
+{
+	float: left;
+	margin: 150px 0 0 20px;
+	background-color: transparent;
+}
+
+#donation-info
+{
+	margin: 230px 0 0 300px;
+	text-align: center;
+	font-family: QikkiRegRegular;
+	font-size: 18px;
+}
+
+#donations-img
+{	
+	float: right;
+		
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	border-radius: 19px 19px 19px 19px;
+	
+	-moz-box-shadow: 5px 5px 5px #666666;
+  	-webkit-box-shadow: 5px 5px 5px #666666;
+  	box-shadow: 5px 5px 5px #666666;
+}
+
+.form-label{
+	width:150px !important;
+}
+.form-label-left{
+	width:150px !important;
+}
+.form-line{
+	padding:10px;
+}
+.form-label-right{
+	width:150px !important;
+}
+.form-all{
+	width:320px;
+	background:#ffffff;
+	color:Black !important;
+	font-family:Verdana;
+	font-size:12px;
+}
+
+/* Cal events styling */
+#events-pic a
+{
+	margin: 10px 0 10px 220px;
+}
+
+#events-form-lunch
+{
+    	margin: 10px 0 0 75px;
+    	text-align: left;
+    	padding: 15px;
+}
+
+#events-form-discover
+{
+    	margin: 30px 0 0 85px;
+    	text-align: left;
+    	padding: 15px;
+}
+
+#events-form-weekend
+{
+    	margin: 0 0 0 85px;
+    	text-align: left;
+    	padding: 15px;
+}
+
+.events-bodytext
+{
+	font-family: TypoSlabserifLightRegular;
+	font-size: 12pt;	
+}
+
+#events-returnpg
+{
+	text-align: center;
+	margin: 30px 400px 0 0;
+	font-size: 14pt;
+	font-family: TypoSlabserifLightRegular;
+}
+#events-table
+{
+	background-color: transparent;
+}
+
+#php-header-discover, #php-header-intro, #php-header-shining
+{	
+	font-family: QikkiRegRegular;
+	font-size: 22pt;
+	padding-bottom: 20px;
+}
+
+#php-header-intro
+{
+	margin: 80px 0 0 -400px;
+	text-align: center;
+}
+
+#php-header-shining
+{
+	margin: 30px 0 0 -400px;
+	text-align: center;
+}
