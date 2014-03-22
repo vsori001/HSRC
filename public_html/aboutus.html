@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>About Holy Spirit Retreat Center</title>
+		<link rel="stylesheet" href="css/button.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="scripts/slideshows.js"></script>
+    <?php include("scripts/nav.php"); ?>
+	</head>
+	
+	<body id="tree">
+	
+		<div class="header" />  
+		
+		<div id="navi">
+      <?php show_nav(); ?>
+		</div><!--navi-->
+		
+		<div id="about-intro">
+			<div id="about-header">Our Retreat Center</div>
+				<br />
+				Have your next retreat, conference, workshop, or seminar at Holy Spirit Retreat Center.  You will find our warm comfortable facility a pleasant change from the conventional hotel providing an inviting, open atmosphere of hospitality is our most important offering.
+		</div><!--about-intro-->
+		
+		<div id="about-fac">
+			<div id="about-header">Complete Facilities</div>
+			<br />
+			<div id="about-pix">
+				<script type="text/javascript">
+					//Presentational Slideshow Script- By Dynamic Drive
+					//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+					//This credit MUST stay intact for legal use
+					
+					var slideshow_width='253px' //SET SLIDESHOW WIDTH (set to largest image's width if multiple dimensions exist)
+					var slideshow_height='250px' //SET SLIDESHOW HEIGHT (set to largest image's height if multiple dimensions exist)
+					var pause=1700 //SET PAUSE BETWEEN SLIDE (2000=2 seconds)
+					var slidebgcolor="white"
+					
+					var dropimages=new Array()
+					//SET IMAGE PATHS. Extend or contract array as needed
+					dropimages[0]="img/bedroomshall_sized.jpg"
+					dropimages[1]="img/bedrooms/img8_sized.jpg"
+					dropimages[2]="img/kitchen/img6_sized.jpg"
+					dropimages[3]="img/lake/lake1_sized.jpg"
+					dropimages[4]="img/meetingRooms/meetingroom_aboutus_sized.jpg"
+					
+					var droplinks=new Array()
+					//SET IMAGE URLs. Use "" if you wish particular image to NOT be linked:
+					droplinks[0]=""
+					droplinks[1]=""
+					droplinks[2]=""
+					droplinks[3]=""
+					droplinks[4]=""						
+					
+					////NO need to edit beyond here/////////////
+					
+					var preloadedimages=new Array()
+					for (p=0;p<dropimages.length;p++)
+					{
+						preloadedimages[p]=new Image()
+						preloadedimages[p].src=dropimages[p]
+					}
+					
+					var ie4=document.all
+					var dom=document.getElementById
+					
+					if (ie4||dom)
+						document.write('<div style="position:relative;width:'+slideshow_width+';height:'+slideshow_height+';overflow:hidden"><div id="canvas0" style="position:absolute;width:'+slideshow_width+';height:'+slideshow_height+';background-color:'+slidebgcolor+';left:-'+slideshow_width+'"></div><div id="canvas1" style="position:absolute;width:'+slideshow_width+';height:'+slideshow_height+';background-color:'+slidebgcolor+';left:-'+slideshow_width+'"></div></div>')
+					else
+						document.write('<a href="javascript:rotatelink()"><img name="defaultslide" src="'+dropimages[0]+'" border=0></a>')
+					
+					var curpos=parseInt(slideshow_width)*(-1)
+					var degree=10
+					var curcanvas="canvas0"
+					var curimageindex=linkindex=0
+					var nextimageindex=1
+					
+					
+					function movepic(){
+						if (curpos<0){
+							curpos=Math.min(curpos+degree,0)
+							tempobj.style.left=curpos+"px"
+						}
+						else{			
+							clearInterval(dropslide)
+							nextcanvas=(curcanvas=="canvas0")? "canvas0" : "canvas1"
+							tempobj=ie4? eval("document.all."+nextcanvas) : document.getElementById(nextcanvas)
+							var slideimage='<img src="'+dropimages[curimageindex]+'" border=0>'
+							tempobj.innerHTML=(droplinks[curimageindex]!="")? '<a href="'+droplinks[curimageindex]+'">'+slideimage+'</a>' : slideimage
+							nextimageindex=(nextimageindex<dropimages.length-1)? nextimageindex+1 : 0
+							setTimeout("rotateimage()",pause)
+						}
+					}
+					
+					function rotateimage(){
+						if (ie4||dom){
+							resetit(curcanvas)
+							var crossobj=tempobj=ie4? eval("document.all."+curcanvas) : document.getElementById(curcanvas)
+							crossobj.style.zIndex++
+							var temp='setInterval("movepic()",50)'
+							dropslide=eval(temp)
+							curcanvas=(curcanvas=="canvas0")? "canvas1" : "canvas0"
+						}
+						else
+							document.images.defaultslide.src=dropimages[curimageindex]
+							linkindex=curimageindex
+							curimageindex=(curimageindex<dropimages.length-1)? curimageindex+1 : 0
+					}
+					
+					function rotatelink(){
+						if (droplinks[linkindex]!="")
+							window.location=droplinks[linkindex]
+					}
+					
+					function resetit(what){
+						curpos=parseInt(slideshow_width)*(-1)
+						var crossobj=ie4? eval("document.all."+what) : document.getElementById(what)
+						crossobj.style.left=curpos+"px"
+					}
+					
+					function startit(){
+						var crossobj=ie4? eval("document.all."+curcanvas) : document.getElementById(curcanvas)
+						crossobj.innerHTML='<a href="'+droplinks[curimageindex]+'"><img src="'+dropimages[curimageindex]+'" border=0></a>'
+						rotateimage()
+					}
+					
+					if (ie4||dom)
+						window.onload=startit
+					else
+						setInterval("rotateimage()",pause)
+				</script>
+			</div><!--about-pix-->
+			The Center has all of the important attributes, which identify a successful conference center.									
+			<ul>
+				<li>Meeting rooms for groups of 10 to 150</li>
+				<li>Beautiful dining room serving attractive healthy meals</li>
+				<li>Gracious, helpful staff</li>
+				<li>Overnight accommodations for up to 48</li>
+				<li>Free, on-site parking</li>
+				<li>Lovely gardens and grounds for outside activities</li>
+			</ul>
+		</div><!--about-fac-->
+		
+		<div id="about-accom">
+			<div id="about-header">Accommodations</div>
+			<p>
+				The Center is open 7 days a week and can be used for activities, which last a few hours, a day, or a week.  Our new overnight facilities feature 24 double room, each with a private bath, heat and air conditioning.  We have 6 bedrooms that fully accessible for our handicapped guests.  Our dining room can seat 150 persons and our staff can acoommodate most dietary needs.
+			</p>
+			<p>
+				Please <a href="contactus.html">contact us</a> any time for more information
+			</p>
+		</div><!--about-accom-->
+		
+		<img id="about-bottompic" src="img/inside_hsrc_sized.jpg" alt="inside about us" />
+		
+		<div class="push"></div>
+		
+		<div class="footer">
+			<a href="home.html" class="no-under">Holy Spirit Retreat Center</a> || 4316 Lanai Rd. Encino, CA 91346 || (818) 784 - 4515<br />
+			<div class="footer-foot">Website designed and maintained by Vanessa Soria</div>
+		</div><!--footer-->	
+		
+	</body>
+</html>
