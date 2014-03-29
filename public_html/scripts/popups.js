@@ -1,6 +1,6 @@
 function openBridges()
 {
-	popup = window.open("../cal-events/bridges.html", "bridges", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=580, height=600");
+	popup = window.open("../cal-events/bridges.html", "bridges", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=700");
 	popup.focus();
 }
 
@@ -451,5 +451,17 @@ function openEightDayJune()
 function openEightDayJuly()
 {
 	popup = window.open("../cal-events/eightDayDirected_july.html", "eight day directed retreat july", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+	popup.focus();
+}
+
+function openLaughterYoga()
+{
+	popup = window.open("../cal-events/yoga.html", "Laughter Yoga", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+	popup.focus();
+}
+
+function openTriduum()
+{
+	popup = window.open("../cal-events/triduum.html", "Sacred Triduum", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
 	popup.focus();
 }
