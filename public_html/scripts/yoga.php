@@ -34,6 +34,7 @@
 		?>  		
 		<div id="php-header-intro">
 			Laughter Yoga<br />
+      			<?php echo "April"; ?>
             <?php if( time() < strtotime("04/02/14") ){ 
 							echo "April 2,";
 						} ?>
