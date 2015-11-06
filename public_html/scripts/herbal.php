@@ -1,10 +1,13 @@
 <html>	
-	<link rel="stylesheet" href="../css/style.css" />
+	<head>
+		<link rel="stylesheet" href="../css/style.css" />
+    <title>Another Traditional Holiday Herbal</title>
+  </head>
 	<body id="leaves">
 		<?php 
 		if ($_POST["email"]<>'') { 
 			$ToEmail = 'hsrcenter@earthlink.net'; 
-			$EmailSubject = 'Registration for A Traditional Holiday Herbal 11/24/13'; 
+			$EmailSubject = 'Registration for Another Traditional Holiday Herbal 11/22/14'; 
 			$mailheader = "From: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
@@ -15,13 +18,12 @@
 			$MESSAGE_BODY .= "City: ".$_POST["city"]."<br>";  
 			$MESSAGE_BODY .= "State: ".$_POST["state"]."<br>"; 
 			$MESSAGE_BODY .= "Zip Code: ".$_POST["zip"]."<br>"; 
-			$MESSAGE_BODY .= "Lunch: ".$_POST["lunch"]."<br>";
 			mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
 		?> 		
 		<div class="events-bodytext" id="events-returnpg">
 			Your Registration has been turned in and will be processed soon.<br />
-			A $10 deposit is due.<br /><br />
-			<b>Thank you for registering for A Traditional Holiday Herbal</b>
+			A $10 deposit is due by November 10.<br /><br />
+			<b>Thank you for registering for Another Traditional Holiday Herbal</b>
 			<img src="../img/grounds_sized_small.jpg" alt="parking" /><br /><br />
 			<font face="SymbolSignsBasisset">L</font>
 			<a class="no-under" href="javascript: window.close()" class="bodytext">
@@ -33,8 +35,8 @@
 		?> 		
 		<div id="php-header-intro">
 			A Traditional Holiday Herbal<br />
-			November 24, 2013 9:00am - 4:00pm<br />
-			$45 with lunch // $35 without lunch<br />
+			November 22, 2014 10:00am - 4:00pm<br />
+			Fee: $55.00<br />
 		</div> 
 		<div class="events-form-wrapper">
 			<form action="herbal.php" method="post" id="events-form-lunch">
@@ -67,13 +69,6 @@
 							City <input name="city" type="text" id="city" size="20">
 							State <input name="state" type="text" id="state" size="4">
 							Zip Code <input name="zip" type="text" id="zip" size="5">
-						</td>
-					</tr>
-					<tr>
-						<td class="events-bodytext">
-							Would you like lunch?
-							Yes<input name="lunch" type="radio" value="yes">
-							No<input name="lunch" type="radio" value="no">
 						</td>
 					</tr>
 					<tr>

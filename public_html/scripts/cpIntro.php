@@ -4,7 +4,7 @@
 		<?php 
 		if ($_POST["email"]<>'') { 
 			$ToEmail = 'hsrcenter@earthlink.net'; 
-			$EmailSubject = 'Registration for Centering Prayer Introductory Workshop 1/26/13'; 
+			$EmailSubject = 'Registration for Centering Prayer Introductory Workshop 1/24/15'; 
 			$mailheader = "From: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
@@ -19,8 +19,7 @@
 			mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
 		?> 		
 		<div class="events-bodytext" id="events-returnpg">
-			Your Registration has been turned in and will be processed soon.<br />
-			A $10 deposit is due by January 15, 2013.<br /><br />
+			Your Registration has been turned in and will be processed soon.<br /><br />
 			<b>Thank you for registering for the <br />
 			Centering Prayer Introductory Workshop.</b><br /><br /><br />
 			<font face="SymbolSignsBasisset">L</font>
@@ -33,7 +32,7 @@
 		?> 
 		<div id="php-header-intro">
 			Centering Prayer Introductory Workshop<br />
-			January 26, 2013 9:00am - 2:30pm<br />
+			January 24, 2015 9:00am - 2:30pm<br />
 			$45 with lunch // $35 without lunch<br />
 		</div>
 		<form action="cpIntro.php" method="post" id="events-form-lunch">

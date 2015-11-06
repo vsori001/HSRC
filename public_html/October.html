@@ -2,16 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<title>October 2013 Retreats & Events</title>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Holy Spirit Retreat Center" />
+<meta property="og:description" content="Holy Spirit Retreat Center, as a chartered ministry of the Sisters of Social Service, is rooted in Scripture and the vision and spirit of Saint Benedict. We strive to create an atmosphere of prayer and hospitality where community is nourished, each person can thrive and an interfaith environment is fostered." />
+<meta property="og:url" content="http://www.hsrcenter.com/" />
+<meta property="og:site_name" content="Holy Spirit Retreat Center" />
+		<title>October <?php echo(date("Y")); ?> Retreats & Events</title>
 		<link rel="stylesheet" href="css/button.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/calendar.css" />
-		<script type="text/javascript" src="scripts/popups.js"></script>
-    <?php include("scripts/nav.php"); ?>
+    <?php include("scripts/global.php"); ?>
 	</head>
 	
 	<body id="tree">
-		<div class="header" />  
+		<?php show_header(); ?>  
 		
 		<div id="navi">
       <?php show_nav(); ?>
@@ -20,7 +25,7 @@
 		<div id="cal-container">
 			<div id="month-sept">
 				<font face="SymbolSignsBasisset" size="15pt"><a class="no-under" href="September.html">L</a></font>
-				&nbsp;October 2013&nbsp;
+				&nbsp;October <?php echo(date("Y")); ?>&nbsp;
 				<font face="SymbolSignsBasisset" size="15pt"><a class="no-under" href="November.html">R</a></font>
 			</div>
 			<table id="calendar">
@@ -35,132 +40,116 @@
 					 <th id="weekdays">Saturday</th>
 				 </tr>
 				 <tr>
-					 <td id="emptydays">29</td>
+					 <td id="emptydays">27</td>
+					 <td id="emptydays">28</td>
+					 <td id="emptydays">29<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>7:00pm - 8:30pm</strong><br/>
+             Centering Prayer Group
+             </a>
+           </td>
 					 <td id="emptydays">30</td>
 					 <td id="days">1</td>
-					 <td id="days">2<br />
-					 	<a href="javascript: openBefitbewell()" class="cal-events" style="color: #003399;" >
-					 	<strong>3:00pm - 4:15pm</strong><br/>
-						Be Fit, Be Well
-					 	</a>	
-					 </td>
-					 <td id="days">3<br />
-					 	<a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
-					 	<strong>9:30am - 11:30am</strong><br/>
-						Centering Prayer Group
-					 	</a>	
-					 </td>
-					 <td id="days">4</td>
-					 <td id="days">5<br />
-					 	<a href="javascript: openNativeAmericanSpirituality()" class="cal-events" style="color: #990000;" >
-					 	<strong>9:00am-3:00pm</strong><br/>
-						A Window Into Native American Spirituality
-					 </a>	
-					 </td>
+					 <td id="days">2</td>
+					 <td id="days">3<br/>
+             <a href="javascript: openJournaling()" class="cal-events" style="color: #990000;">
+             <strong>9:30am - 3:30pm</strong><br/>
+             The Art and Soul of Journaling
+             </a>
+           </td>
 				 </tr>
 				 <tr>
+					 <td id="days">4</td>
+					 <td id="days">5</td>
 					 <td id="days">6</td>
 					 <td id="days">7</td>
-					 <td id="days">8<br />
-					 	<a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
-					 	<strong>7:00pm - 9:00pm</strong><br/>
-						Centering Prayer Group
-					 	</a><br/><br />
-					 	<a href="javascript: openWaw()" class="cal-events" style="color: #003399;" >
-					 	<strong>10:00am - 12:00pm</strong><br/>
-						Women at the Well
-					 	</a>
-					 </td>
-					 <td id="days">9<br />
-					 	<a href="javascript: openBefitbewell()" class="cal-events" style="color: #003399;" >
-					 	<strong>3:00pm - 4:15pm</strong><br/>
-						Be Fit, Be Well
-					 	</a>	
-					 </td>
-					 <td id="days">10<br />
-					 	<a href="javascript: openGospeljohn()" class="cal-events" style="color: #003399;" >
-					 	<strong>9:30am - 11:30am</strong><br/>
-						The Gospel of John: A Study Group
-					 	</a>	
-					 </td>
-					 <td id="days">11</td>
-					 <td id="days">12</td>
+					 <td id="days">8<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>9:30am - 11:30am</strong><br/>
+             Centering Prayer Group
+             </a>
+           </td>
+					 <td id="days">9</td>
+					 <td id="days">10</td>
 				 </tr>
 				 <tr>
-					 <td id="days">13</td>
+					 <td id="days">11</td>
+					 <td id="days">12</td>
+					 <td id="days">13<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>10:00am - 12:00pm</strong><br/>
+             Woman at the Well
+             </a><br/><br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>7:00pm - 8:30pm</strong><br/>
+             Centering Prayer Group
+             </a>
+           </td>
 					 <td id="days">14</td>
 					 <td id="days">15</td>
 					 <td id="days">16</td>
-					 <td id="days">17<br />
-					 	<a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
-					 	<strong>9:30am - 11:30am</strong><br/>
-						Centering Prayer Group
-					 	</a>	
-					 </td>
+					 <td id="days">17<br/>
+             <a href="javascript: openWellness()" class="cal-events" style="color: #990000;">
+             <strong>9:30am - 4:00pm</strong><br/>
+             Wellness Day: A Conversation With Dr. Arnel Reyes
+             </a>
+           </td>
+				 </tr>
+				 <tr>
 					 <td id="days">18</td>
-					 <td id="days">19<br />
-					 	<a href="javascript: void(0)" class="cal-events" style="color: #ff00ff;" >
-					 	<strong>11:00am - 5:00pm</strong><br/>
-						Autumn Festival of Art
-					 	</a>	
-					 </td>
-				 </tr>
-				 <tr>
-					 <td id="days">20<br />
-					 	<a href="javascript: void(0)" class="cal-events" style="color: #ff00ff;" >
-					 	<strong>11:00am - 5:00pm</strong><br/>
-						Autumn Festival of Art
-					 	</a>	
-                     </td>
+					 <td id="days">19</td>
+					 <td id="days">20</td>
 					 <td id="days">21</td>
-					 <td id="days">22<br />
-					 	<a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
-					 	<strong>7:00pm - 9:00pm</strong><br/>
-						Centering Prayer Group
-					 	</a>	
-					 </td>
-					 <td id="days">23<br />
-					 	<a href="javascript: openBridges()" class="cal-events" style="color: #003399;" >
-					 	<strong>10:00am - 12:00pm</strong><br/>
-						Bridges to Contemplative Living
-					 	</a>
-				     </td>
-					 <td id="days">24<br />
-					 	<a href="javascript: openMonthlyForWomen()" class="cal-events" style="color: #003399;" >
-					 	<strong>10:00am - 1:00pm</strong><br/>
-						Monthly Opportunity for Women
-					 	</a>	
-					 </td>
-					 <td id="days">25<br />
-					 	<a href="javascript: openCpweekendFall()" class="cal-events" style="color: #006600;" >
-					 	<strong>starts at 5:00pm</strong><br/>
-						Centering Prayer Weekend Retreat
-					 	</a>	
-					 </td>
-					 <td id="days">26<br />
-					 	<a href="javascript: openCpweekendFall()" class="cal-events" style="color: #006600;" >
-						Centering Prayer Weekend Retreat
-					 	</a>	
-					 </td>
+					 <td id="days">22<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>9:30am - 11:30am</strong><br/>
+             Centering Prayer Group
+             </a>
+           </td>
+					 <td id="days">23<br/>
+             <a href="javascript: openCpweekend()" class="cal-events" style="color: #003399;" >
+             <strong>starts 5:00pm</strong><br/>
+             Centering Prayer Weekend Retreat
+             </a>
+           </td>
+					 <td id="days">24<br/>
+             <a href="javascript: openCpweekend()" class="cal-events" style="color: #003399;" >
+             Centering Prayer Weekend Retreat
+             </a>
+           </td>
 				 </tr>
 				 <tr>
-					 <td id="days">27<br />
-					 	<a href="javascript: openCpweekendFall()" class="cal-events" style="color: #006600;" >
-					 	<strong>ends at 1:00pm</strong><br/>
-						Centering Prayer Weekend Retreat
-					 	</a>	
-					 </td>
-					 <td id="days">28</td>
+					 <td id="days">25<br/>
+             <a href="javascript: openCpweekend()" class="cal-events" style="color: #003399;" >
+             <strong>ends 1:00pm</strong><br/>
+             Centering Prayer Weekend Retreat
+             </a>
+           </td>
+					 <td id="days">26</td>
+					 <td id="days">27<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>7:00pm - 8:30pm</strong><br/>
+             Centering Prayer Group
+             </a>
+           </td>
+					 <td id="days">28<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>10am - 12pm</strong><br/>
+             Bridges to Contemplative Living
+             </a><br/><br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>11:30am - 1:30pm</strong><br/>
+             Woman to Woman
+             </a>
+           </td>
 					 <td id="days">29</td>
 					 <td id="days">30</td>
-					 <td id="days">31<br />
-					 	<a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
-					 	<strong>9:30am - 11:30am</strong><br/>
-						Centering Prayer Group
-					 	</a>	
-					 </td>
-					 <td id="emptydays">1</td>
-					 <td id="emptydays">2</td>
+					 <td id="days">31<br/>
+             <a href="javascript: openStory()" class="cal-events" style="color: #990000;">
+             <strong>9:30am - 3:30pm</strong><br/>
+             Remembering To Tell The Story
+             </a>
+           </td>
 				 </tr>
 			 </tbody>
 			</table>
@@ -180,9 +169,8 @@
 	
 		<div class="push"></div>
 	
-		<div class="footer">
-			<a href="home.html" class="no-under">Holy Spirit Retreat Center</a> || 4316 Lanai Rd. Encino, CA 91346 || (818) 784 - 4515<br />
-			<div class="footer-foot">Website designed and maintained by Vanessa Soria</div>
-		</div><!--footer-->	
+		<!-- FOOTER -->
+  	<?php show_footer(); ?>
+		<script type="text/javascript" src="scripts/popups.js"></script>
 	</body>
 </html>

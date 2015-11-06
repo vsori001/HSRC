@@ -1,7 +1,15 @@
 function openBridges()
 {
-	popup = window.open("../cal-events/bridges.html", "bridges", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=700");
-	popup.focus();
+	var getADate = new Date();
+	var month = getADate.getMonth() + 1;
+	if( month < 7 ){
+		popup = window.open("../cal-events/bridges.html", "bridges", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=700");
+		popup.focus();
+	}
+	else{
+		popup = window.open("../cal-events/bridges.html", "bridges", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+		popup.focus();
+	}
 }
 
 function openCPgroup()
@@ -36,32 +44,18 @@ function openWawbridges()
 
 function openLabyrinth()
 {
-	popup = window.open("../cal-events/labyrinth.html", "labyrinth", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=624, height=600");
+	popup = window.open("../cal-events/labyrinth.html", "labyrinth", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=624, height=400");
 	popup.focus();	
 }
 
 function openCpintro()
 {
 	popup = window.open("../cal-events/cpintro.html", "cpintro", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=630, height=500");
-	popup.focus();	
 }
 
 function openCpcont()
 {
-	popup = window.open("../cal-events/cpcontin.html", "cpcontin", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=530, height=400");
-	popup.focus();	
-}
-
-function openCpCont2012()
-{
-	popup = window.open("../cal-events/cpContin2012.html", "cpcontin2012", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=530, height=430");
-	popup.focus();
-}
-
-function openWellness()
-{
-	popup = window.open("../cal-events/wellness.html", "wellness", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=624, height=600");
-	popup.focus();	
+	popup = window.open("../cal-events/cpcontin.html", "cpcontin", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=480");
 }
 
 function openExpectant()
@@ -72,8 +66,8 @@ function openExpectant()
 
 function openAutumn()
 {
-	popup = window.open("../cal-events/autumnfest.html", "autumn", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=900, height=620");
-	popup.focus();	
+	popup = window.open("../cal-events/autumnFallFestival.html", "autumn", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=600");
+	//popup.focus();	
 }
 
 function openCpweekend()
@@ -108,7 +102,7 @@ function openPraying()
 
 function openAdvent()
 {
-	popup = window.open("../cal-events/adventSilent.html", "advent", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=624, height=600");
+	popup = window.open("../cal-events/adventSilent.html", "advent", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
 	popup.focus();	
 }
 
@@ -121,12 +115,6 @@ function openThomas()
 function openOantiphons()
 {
 	popup = window.open("../cal-events/oantiphons.html", "oantiphons", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=624, height=600");
-	popup.focus();	
-}
-
-function openNewyear()
-{
-	popup = window.open("../cal-events/newyears.html", "newyear", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=624, height=600");
 	popup.focus();	
 }
 
@@ -151,12 +139,6 @@ function openVespers()
 function openJourney()
 {
 	popup = window.open("../cal-events/journey.html", "theJourney", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=611, height=640");
-	popup.focus();	
-}
-
-function openCommunication()
-{
-	popup = window.open("../cal-events/communication.html", "communication", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=624, height=600");
 	popup.focus();	
 }
 
@@ -354,7 +336,7 @@ function openEasterVigil()
 
 function openWawWeekend()
 {
-	popup = window.open("../cal-events/wawSummer.html", "waw summer", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=600");
+	popup = window.open("../cal-events/wawSummer.html", "waw summer", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=620");
 	popup.focus();	
 }
 
@@ -366,8 +348,8 @@ function openBefitbewell()
 
 function openGospeljohn()
 {
-	popup = window.open("../cal-events/gospelJohn.html", "The Gospel of John", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=580, height=600");
-	popup.focus();
+	popup = window.open("../cal-events/gospelJohn.html", "The Gospel of John", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=600");
+	//popup.focus();
 }
 
 function openMonthlyForWomen()
@@ -397,7 +379,7 @@ function openCpweekend()
 function openHerbal()
 {
 	popup = window.open("../cal-events/herbal.html", "Holiday Herbal", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=600");
-	popup.focus();
+	//popup.focus();
 }
 
 function openJesseTree()
@@ -420,19 +402,13 @@ function openEncounteringGod()
 
 function openWomanToWoman()
 {
-	popup = window.open("../cal-events/womantowoman.html", "Woman To Woman", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=650");
-	popup.focus();
+	popup = window.open("../cal-events/womantowoman.html", "Woman To Woman", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+	//popup.focus();
 }
 
 function openSitLikeAMountain()
 {
 	popup = window.open("../cal-events/sitLikeAMountain.html", "Sit Like A Mountain", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=550");
-	popup.focus();
-}
-
-function openSacredCollage()
-{
-	popup = window.open("../cal-events/sacredCollage.html", "Sacred Collage", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
 	popup.focus();
 }
 
@@ -456,7 +432,7 @@ function openEightDayJuly()
 
 function openLaughterYoga()
 {
-	popup = window.open("../cal-events/yoga.html", "Laughter Yoga", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+	popup = window.open("../scripts/laughterYoga.php", "Laughter Yoga", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
 	popup.focus();
 }
 
@@ -464,4 +440,153 @@ function openTriduum()
 {
 	popup = window.open("../cal-events/triduum.html", "Sacred Triduum", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
 	popup.focus();
+}
+
+function openGiftOfShadow()
+{
+	popup = window.open("../cal-events/giftofshadow.html", "Gift of Shadow", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=580");
+	popup.focus();
+}
+
+function openExercisingFaith()
+{
+	popup = window.open("../cal-events/exercisingFaith.html", "Exercising Faith", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=580");
+	popup.focus();
+}
+
+function openExercisingFaith()
+{
+	popup = window.open("../cal-events/exercisingFaith.html", "Exercising Faith", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=580");
+	popup.focus();
+}
+
+function openPaceEBene()
+{
+	popup = window.open("../cal-events/paceEBene.html", "Pace E Bene", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=580");
+	//popup.focus();
+}
+
+function openOptimalWellness()
+{
+	popup = window.open("../cal-events/optimalWellness.html", "Pace E Bene", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=580");
+	//popup.focus();
+}
+
+function openPathOfMercy()
+{
+	popup = window.open("../cal-events/pathofmercy.html", "Path Of Mercy", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=580");
+}
+
+function openReedOfGod()
+{
+	popup = window.open("../cal-events/reedofgod.html", "Reed Of God", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=580");
+}
+
+function openSimplicity()
+{
+	popup = window.open("../cal-events/simplicity.html", "Simplicty", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+}
+
+function openImagoDei()
+{
+	popup = window.open("../cal-events/imagodei.html", "Imago Dei", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+}
+
+function openBreathe()
+{
+	popup = window.open("../cal-events/breathe.html", "Breathe In Me", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+}
+
+function openTeachingHeart()
+{
+	popup = window.open("../cal-events/teachingheart.html", "Teaching Heart", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+}
+
+function openTao()
+{
+	popup = window.open("../cal-events/tao.html", "Tao of Pooh", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+}
+
+function openDarkNight()
+{
+	popup = window.open("../cal-events/darknight.html", "Dark Night of the Soul", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+}
+
+function openSealedBySpirit()
+{
+	popup = window.open("../cal-events/sealedBySpirit.html", "Sealed By The Spirit", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=500");
+}
+
+function openSpeakingTongues(){
+	popup = window.open("../cal-events/speakingTongues.html", "Speaking in Tonuges of Dance", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=500");
+}
+
+function openYoga()
+{
+	popup = window.open("../cal-events/yoga.html", "Spritual Journey and Yoga", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openEightDayInt()
+{
+	popup = window.open("../cal-events/eightDayInt.html", "Eight Day Intensive Centering Prayer", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openCommunityDay()
+{
+	popup = window.open("../cal-events/communityDay.html", "Centering Prayer Community Day", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openCommunication()
+{
+	popup = window.open("../scripts/communication.php", "Communication", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openRumi()
+{
+	popup = window.open("../scripts/rumi.php", "Rumi", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openJournaling()
+{
+	popup = window.open("../scripts/journaling.php", "Journaling", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openStory()
+{
+	popup = window.open("../scripts/story.php", "Story", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openWellness()
+{
+	popup = window.open("../scripts/wellness.php", "wellness", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openConsciousAging()
+{
+	popup = window.open("../scripts/conscious-aging.php", "Conscious Aging", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openSacredCollage()
+{
+	popup = window.open("../scripts/sacredCollage.php", "Sacred Collage", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openGuadalupe()
+{
+	popup = window.open("../scripts/guadalupe.php", "Guadalupe", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openDancingFestival()
+{
+	popup = window.open("../scripts/dancing-festival.php", "Dancing Festival", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=600, height=580");
+}
+
+function openNewyear()
+{
+	popup = window.open("../scripts/newyear.php", "newyear", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
+}
+
+function openStAgatha()
+{
+	popup = window.open("../img/events/2015/st-agatha-choir/agatha-flyer-pdf-page-0.gif", "St Agatha", "toolbar=no, status=no, menubar=no, scrollbars=no, resizable=no, width=620, height=580");
 }

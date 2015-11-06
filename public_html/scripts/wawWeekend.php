@@ -4,7 +4,7 @@
 		<?php 
 		if ($_POST["email"]<>'') { 
 			$ToEmail = 'hsrcenter@earthlink.net'; 
-			$EmailSubject = 'Registration for Women at the Well Summer Retreat 7/19/13 - 7/21/13'; 
+			$EmailSubject = 'Registration for the Friendship of Women Retreat 7/18/14 - 7/20/14'; 
 			$mailheader = "From: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
@@ -20,9 +20,8 @@
 		?> 		
 		<div class="events-bodytext" id="events-returnpg">
 			Your Registration has been turned in and will be processed soon.<br />
-			A $30 deposit is due by July 1, 2013.<br /><br />
-			<b>Thank you for registering for the Women at the Well<br />
-			Summer Retreat.</b><br /><br />
+			A $50 non-refundable deposit is due by July 5, 2014.<br /><br />
+			<b>Thank you for registering for the Friendship of Women Retreat</b><br /><br />
 			<img src="../img/grounds_sized_small.jpg" alt="parking" /><br /><br />
 			<font face="SymbolSignsBasisset">L</font>
 			<a class="no-under" href="javascript: window.close()" class="bodytext">
@@ -34,8 +33,8 @@
 		?>  		
 		<div id="php-header-intro">
 			Women at the Well Summer Retreat<br />
-			July 19, 2013 7:00pm -<br />
-			July 21, 2013 1:00pm<br />
+			July 18, 2014 7:00pm -<br />
+			July 20, 2014 1:00pm<br />
 		</div>
 		<form action="wawWeekend.php" method="post" id="events-form-weekend">
 			<table width="450" border="0" cellpadding="3" id="events-table">
@@ -74,7 +73,7 @@
 						What type of registration would you like to sign up for?<br/>
 						<input name="room" type="radio" value="Private Room">Private Room ($225)<br/>
 						<input name="room" type="radio" value="Shared Room">Shared Room ($200/person)<br/>
-						<input name="room" type="radio" value="Commuter">Commuter ($125 includes all meals)
+						<input name="room" type="radio" value="Commuter">Commuter ($125)
 					</td>
 				</tr>
 				<tr>

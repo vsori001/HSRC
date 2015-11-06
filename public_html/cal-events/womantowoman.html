@@ -6,12 +6,69 @@
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/calendar.css" />
 		<link rel="stylesheet" href="../css/button.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	</head>
 	
-	<body>
+	<body class="womantowoman">
 		<a id="reg-button" href="../scripts/womantowoman.php" class="button">&raquo; Register Here &laquo;</a>
 		<div id="events-img-womantowoman" class="eventsIMG events-img">
-			<img src="../img/events/2014/womanTowoman.jpg" width="600" height="432" border="0" />
+    	<div class="content">
+      	<h1>Woman To Woman<br/>
+        <span>Presented by Josie Broehm, MFT</span></h1>
+        <h2>Thursdays 10:00am - 1:00pm<br/>
+        <span id="dateList"></span></h2>
+        <p>Woman of all ages and traditions gather monthly to nurture their spiritual identity and to reflect on themes that challenge us as women in today&#8217;s world. Do come and join the conversation, as your schedule permits, and meet other women eager to explore new possibilities at every age.</p>
+        <p>We recommend that you bring your journals/writing materials; dress comfortably for simple movement experiences.</p>
+        <p><em>Josie Broehm is a licensed psychotherapist and spiritual director in private practice. She works with dreams and assists individuals in creating rituals for life&#8217;s sacred moments.</em></p>
+        <p id="fees"><strong>Fee: $45 with lunch, $35 without lunch<strong><br/><br/></p>
+      </div>
+      <script type="text/javascript">
+			var d = new Date();
+			var month = d.getMonth();
+			var day = d.getDay();
+			if( month < 9 ){ 
+				if( day > 25 ){
+					$('#dateList').append("October 30, November 20, December 18");
+				}
+				else{
+					$('#dateList').append("September 25, October 30, November 20, December 18");
+				}
+			}
+			else if( month < 10 ){ 
+				alert("its september");
+				if( day > 30 ){
+					$('#dateList').append("November 20, December 18");
+				}
+				else{
+					$('#dateList').append("October 30, November 20, December 18");
+				}
+			}
+			else if( month < 11 ){ 
+				alert("its september");
+				if( day > 20 ){
+					$('#dateList').append("December 18");
+				}
+				else{
+					$('#dateList').append("November 20, December 18");
+				}
+			}
+			else if( month < 12 ){ 
+				alert("its september");
+				if( day > 18 ){
+					$('h2').append("[No more dates available]");
+					$('#fees').css("display", "none");
+				}
+				else{
+					$('#dateList').append("December 18");
+				}
+			}
+			else{
+				$('h2').append("<span>[No more dates available]</span>");
+				$('#fees').css("display", "none");
+			}
+		</script>
+			<!--<img src="../img/events/2014/womanTowoman.jpg" width="600" height="432" border="0" />-->
 		</div><!--events-content-->
 	</body>
 </html>

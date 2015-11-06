@@ -160,11 +160,12 @@ a.cal-events:hover
 	background-color: #A172FE;
 }
 
-#events-img-advent, #events-img-festival, #events-img-cpgrp, #events-img-cpweekend, #events-img-bound, #events-img-disc, #events-img-expect, #events-img-lab, #events-img-new, #events-img-oa, #events-img-color, #events-img-thom, #events-img-wellness, #events-img-alleluia, #events-img-vespers, #events-img-xmas, #events-img-journey, #events-img-communication, #events-img-cross, #events-img-united, #events-img-livingThrough, #events-img-silentRe, #events-img-silentSat, #events-img-artSacred, #events-img-eightDayPost, #events-img-eightDayDir, #events-img-eightDayDir2, #events-img-heartPrints, #events-img-holyWeek, #events-img-mensOnly, #events-img-threeGraces, #events-img-nativeAmerican, #events-img-imageImagination, #events-img-adventRenewal, #events-img-crones, #events-img-reaching, #events-img-vatican, #events-img-contemplative, #events-img-sophia, #events-img-school, #events-img-newEvangelization, #events-img-wrestling, #events-img-writing, #events-img-celticSpirituality, #events-img-holySpirit,#events-img-wawSummer, .eventsIMG
+#events-img-advent, #events-img-festival, #events-img-cpweekend, #events-img-bound, #events-img-disc, #events-img-expect, #events-img-new, #events-img-oa, #events-img-color, #events-img-thom, #events-img-wellness, #events-img-alleluia, #events-img-vespers, #events-img-xmas, #events-img-journey, #events-img-communication, #events-img-cross, #events-img-united, #events-img-livingThrough, #events-img-silentRe, #events-img-artSacred, #events-img-eightDayPost, #events-img-heartPrints, #events-img-holyWeek, #events-img-mensOnly, #events-img-threeGraces, #events-img-nativeAmerican, #events-img-imageImagination, #events-img-adventRenewal, #events-img-crones, #events-img-reaching, #events-img-vatican, #events-img-contemplative, #events-img-sophia, #events-img-school, #events-img-newEvangelization, #events-img-wrestling, #events-img-writing, #events-img-celticSpirituality, #events-img-holySpirit, #events-img-eightDayInt, .eventsIMG
 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	margin-left: -300px;
 }
 
 #events-img-festival
@@ -175,12 +176,10 @@ a.cal-events:hover
 	margin-left: -431px;
 }
 
-#events-img-cpgrp
+#events-img-cpgroup
 {
-	width: 592px;
-	height: 496px;
-	margin-top: -248px;
-	margin-left: -296px;	
+	height: 474px;
+	margin-top: -237px;
 }
 
 #events-img-cpintro
@@ -225,10 +224,8 @@ a.cal-events:hover
 
 #events-img-lab
 {
-	width: 586px;
-	height: 512px;
-	margin-top: -256px;
-	margin-left: -293px;
+	height: 339px;
+	margin-top: -169px;
 }
 
 #events-img-oa
@@ -337,10 +334,8 @@ a.cal-events:hover
 
 #events-img-silentSat
 {
-	width: 600px;
-	height: 494px;
-	margin-top: -235px;
-	margin-left: -300px;
+	height: 343px;
+	margin-top: -210px;
 }
 
 #events-img-artSacred
@@ -361,18 +356,14 @@ a.cal-events:hover
 
 #events-img-eightDayDir
 {
-	width: 600px;
-	height: 498px;
-	margin-top: -249px;
-	margin-left: -300px;
+	height: 531px;
+	margin-top: -240px;
 }
 
 #events-img-eightDayDir2
 {
-	width: 600px;
-	height: 486px;
-	margin-top: -249px;
-	margin-left: -300px;
+	height: 518px;
+	margin-top: -259px;
 }
 
 #events-img-heartPrints
@@ -385,10 +376,8 @@ a.cal-events:hover
 
 #events-img-holyWeek
 {
-	width: 600px;
-	height: 558px;
-	margin-top: -229px;
-	margin-left: -300px;
+	height: 520px;
+	margin-top: -240px;
 }
 
 #events-img-mensOnly
@@ -586,9 +575,78 @@ a.cal-events:hover
 	margin-top:-259px;
 }
 
+#events-img-simplicity{
+	height:442px;
+	margin-top:-200px;
+}
+
+#events-img-imagodei{
+	height:436px;
+	margin-top:-200px;
+}
+
+#events-img-sealedBySpirit{
+	height:436px;
+	margin-top:-200px;
+}
+
+#events-img-speakingTongues{
+	height:512px;
+	margin-top:-206px;
+}
+
+#events-img-eightDayInt{
+	height: 452px;
+	margin-top: -200px;
+}
+
+#events-img-communityday{
+	height: 443px;
+	margin-top: -221px;
+}
+
+
+
+body.womantowoman{
+	width: 100%;
+	background: url(../img/events/2014/textures/linen.png) repeat #baaaca;
+	text-align: center;
+}
+
 #events-img-womantowoman{
 	height:432px;
 	margin-top:-216px;
+	margin-left: -270px;
+}
+
+#events-img-womantowoman .content{
+	width: 540px;
+	font-family: 'Lato', Arial, Helvetica;
+	font-size: 18px;
+	line-height: 20px;
+	color: #ffe5a4;
+	font-weight: 300;
+}
+
+#events-img-womantowoman h1{
+	font-size: 40px;
+	line-height: 35px;
+	color: #ffe5a4;
+	margin-bottom: 20px;
+}
+
+#events-img-womantowoman h1 span{
+	font-size: 25px;
+}
+
+#events-img-womantowoman h2{
+	font-size: 25px;
+	line-height: 30px;
+	color: #FFFFFF;
+}
+
+#events-img-womantowoman h2 span{
+	font-size: 18px;
 }
 
 #events-img-sitlikeamountain{
@@ -597,26 +655,383 @@ a.cal-events:hover
 }
 
 #events-img-sacredCollage{
-	height:500px;
-	margin-top:-220px;
+	height: 446px;
+	margin-top: -203px;
 }
 
 #events-img-waw{
-	height:692px;
-	margin-top:-300px;
+	height:422px;
+	margin-top:-190px;
 }
 
 #events-img-bridges{
 	height:692px;
-	margin-top:-346px;
+	margin-top:-226px;
 }
 
 #events-img-yoga{
-	height:410px;
+	height:446px;
 	margin-top:-195px;
 }
 
 #events-img-triduum{
 	height: 488px;
 	margin-top: -224px;
+}
+
+#events-img-wawSummer{
+	height: 508px;
+	margin-top: -234px;
+}
+
+#events-img-gospelJohn{
+	height: 524px;
+	margin-top: -252px;
+}
+
+#events-img-exercisingFaith{
+	height: 457px;
+	margin-top: -229px;
+}
+
+#events-img-paceebene{
+	height: 518px;
+	margin-top: -239px;
+}
+
+#events-img-optimalWellness{
+	height: 538px;
+	margin-top: -239px;
+}
+
+#events-img-pathofmercy{
+	height: 563px;
+	margin-top: -230px;
+}
+
+#events-img-reedofgod{
+	height: 539px;
+	margin-top: -239px;
+}
+
+#events-img-breathe{
+	height: 468px;
+	margin-top: -210px;
+}
+
+#events-img-teachingheart{
+	height: 462px;
+	margin-top: -210px;
+}
+
+#events-img-tao{
+	height: 456px;
+	margin-top: -200px;
+}
+
+#events-img-darknight{
+	height: 452px;
+	margin-top: -200px;
+}
+
+
+
+
+
+
+/* Fall Festival Styles */
+
+body.fallFestival{
+	width: 100%;
+	background: url(../img/events/2014/textures/festival_press_release_bg.jpg) repeat #ffffff;
+	text-align: center;
+}
+
+#events-img-fallfestival{
+	height:auto;
+	top:0px;
+	margin-left: -270px;
+}
+
+#events-img-fallfestival .content{
+	width: 540px;
+	font-family: 'Oxygen', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 300;
+	text-align: left;
+}
+
+#events-img-fallfestival .content a{
+	color: #6C432F;
+	text-decoration: underline;
+}
+
+#events-img-fallfestival h1{
+	font-family: 'Montez', Georgia, Helvetica;
+	font-size: 40px;
+	line-height: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+/* Woman to Woman Styles */
+body.womantowoman{
+	width: 100%;
+	background: url(../img/events/2014/textures/linen.png) repeat #baaaca;
+	text-align: center;
+}
+
+#events-img-womantowoman{
+	height:432px;
+	margin-top:-216px;
+	margin-left: -270px;
+}
+
+#events-img-womantowoman .content{
+	width: 540px;
+	font-family: 'Lato', Arial, Helvetica;
+	font-size: 18px;
+	line-height: 20px;
+	color: #ffe5a4;
+	font-weight: 300;
+}
+
+#events-img-womantowoman h1{
+	font-size: 40px;
+	line-height: 35px;
+	color: #ffe5a4;
+	margin-bottom: 20px;
+}
+
+#events-img-womantowoman h1 span{
+	font-size: 25px;
+}
+
+#events-img-womantowoman h2{
+	font-size: 25px;
+	line-height: 30px;
+	color: #FFFFFF;
+}
+
+#events-img-womantowoman h2 span{
+	font-size: 18px;
+}
+
+/* Centering Prayer Styles*/
+body.cp-continuation,
+body.cp-weekend{
+	width: 100%;
+	background: url(../img/events/2014/textures/diagonal_beige.jpg) repeat;
+	text-align: center;
+}
+
+#events-img-cp-cont{
+	height:500px;
+	margin-top:-190px;
+	margin-left: -270px;
+}
+
+#events-img-cp-cont .content,
+#events-img-cp-weekend .content{
+	width: 540px;
+	font-family: 'Marcellus', Arial, Helvetica;
+	font-size: 18px;
+	line-height: 20px;
+	color: #123456;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px 10px;
+}
+
+#events-img-cp-weekend .content a{
+	position: static;
+	margin: 0 auto;
+}
+
+#events-img-cp-cont h1,
+#events-img-cp-weekend h1{
+	font-size: 35px;
+	line-height: 35px;
+	color: #FF001A;
+	margin-bottom: 20px;
+}
+
+#events-img-cp-weekend h1{
+	color: #1514F4;
+}
+
+#events-img-cp-cont h1 span,
+#events-img-cp-weekend h1 span{
+	font-size: 20px;
+	color: #000000;
+}
+
+#events-img-cp-cont h2,
+#events-img-cp-weekend h2{
+	font-size: 25px;
+	line-height: 30px;
+	color: #111111;
+}
+
+#events-img-cp-cont h2 span,
+#events-img-cp-weekend h2 span{
+	font-size: 18px;
+}
+
+/* Native American Styles*/
+body.native-american{
+	width: 100%;
+	background: url(../img/events/2014/textures/bricks.jpg) repeat;
+	text-align: center;
+}
+
+/*#events-img-native-american{
+	height:500px;
+	margin-top:-190px;
+	margin-left: -270px;
+}*/
+
+#events-img-native-american .content{
+	width: 540px;
+	font-family: 'Cabin', Arial, Helvetica;
+	font-size: 18px;
+	line-height: 20px;
+	color: #402A27;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 10px;
+}
+
+#events-img-native-american .content a{
+	position: static;
+	margin: 0 auto;
+}
+
+#events-img-native-american h1{
+	font-size: 35px;
+	line-height: 35px;
+	color: #386031;
+	margin-bottom: 20px;
+}
+
+#events-img-native-american h1 span{
+	font-size: 20px;
+}
+
+#events-img-native-american h2{
+	font-size: 25px;
+	line-height: 30px;
+	color: #111111;
+}
+
+#events-img-native-american h2 span{
+	font-size: 18px;
+}
+
+/* Holiday Herbal Styles*/
+body.holiday-herbal{
+	width: 100%;
+	background: url(../img/events/2014/textures/potato_sack.jpg) repeat;
+	text-align: center;
+}
+
+/*#events-img-native-american{
+	height:500px;
+	margin-top:-190px;
+	margin-left: -270px;
+}*/
+
+#events-img-holiday-herbal .content{
+	width: 540px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	color: #402A27;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 10px;
+}
+
+#events-img-holiday-herbal .content a{
+	position: static;
+	margin: 0 auto;
+}
+
+#events-img-holiday-herbal h1{
+	font-size: 35px;
+	line-height: 35px;
+	color: #386031;
+	margin-bottom: 20px;
+}
+
+#events-img-holiday-herbal h1 span{
+	font-size: 20px;
+}
+
+#events-img-holiday-herbal h2{
+	font-size: 25px;
+	line-height: 30px;
+	color: #111111;
+}
+
+#events-img-holiday-herbal h2 span{
+	font-size: 18px;
+}
+
+/* Silent Saturday Styles*/
+body.silentSaturday{
+	width: 100%;
+	background: url(../img/events/2014/textures/linen_yellow.png) repeat;
+	text-align: center;
+}
+
+#events-img-silentSaturday{
+	/*height:500px;
+	margin-top:-190px;
+	margin-left: -270px;*/
+	top: 30px;
+}
+
+#events-img-silentSaturday .content{
+	width: 540px;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	color: #463709;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 10px;
+}
+
+#events-img-silentSaturday .content a{
+	position: static;
+	margin: 0 auto;
+}
+
+#events-img-silentSaturday h1{
+	font-size: 35px;
+	line-height: 35px;
+	color: #4a2170;
+	margin-bottom: 20px;
+}
+
+#events-img-silentSaturday h1 span{
+	font-size: 20px;
+}
+
+#events-img-silentSaturday h2{
+	font-size: 25px;
+	line-height: 30px;
+	color: #111111;
+}
+
+#events-img-silentSaturday h2 span{
+	font-size: 18px;
 }

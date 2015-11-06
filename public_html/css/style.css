@@ -39,7 +39,7 @@ body
 {
 	width: 1024px;
 	height: 100%;
-	margin: 10px auto;
+	margin: -150px auto;
 	background-color: #ffffff;
 	font-family:Arial, Helvetica, sans-serif;
 }
@@ -85,7 +85,7 @@ ul
 
 #navi
 {
-	margin: 230px auto;
+	margin: 0 auto;
 	float: left;
 }
 
@@ -95,8 +95,11 @@ ul
 	background-position: center;
 	height: 186px;
 	width: 1024px;
-	float: right;	
-	
+	float: right;
+	margin-bottom: 50px;
+}
+
+.header img {
 	-webkit-border-radius: 19px;
 	-moz-border-radius: 19px;
 	border-radius: 19px;
@@ -400,7 +403,7 @@ a.no-under:hover
 /* Director's Letter Page, Inquiries Page, Newsletter Page, Map Page, FAQ Page Styling */
 /* Contact Us Page Styling contd */
 
-#dir-letter, #inquiries-header, #center-update, #map, #faq, #contact
+#dir-letter, #inquiries-header, #map, #faq, #contact
 {
 	margin: 230px 0 0 300px;
 }
@@ -420,29 +423,6 @@ a.no-under:hover
 	font-family:TypoSlabserifLightRegular;
 	font-size:18px;
 	line-height:22px;
-}
-	
-#center-update
-{
-	text-align: center;
-}
-
-#center-update img:nth-of-type(1){
-	padding-top:30px!important;
-}
-
-#center-update a
-{
-	font-family: QikkiRegRegular;
-	font-size: 18pt;
-	text-decoration: none;
-	color: black;
-}
-
-#center-update a:hover
-{
-	text-decoration: none;
-	color: #009933;
 }
 
 #inquiries

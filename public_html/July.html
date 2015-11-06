@@ -2,16 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<title>July 2014 Retreats & Events</title>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Holy Spirit Retreat Center" />
+<meta property="og:description" content="Holy Spirit Retreat Center, as a chartered ministry of the Sisters of Social Service, is rooted in Scripture and the vision and spirit of Saint Benedict. We strive to create an atmosphere of prayer and hospitality where community is nourished, each person can thrive and an interfaith environment is fostered." />
+<meta property="og:url" content="http://www.hsrcenter.com/" />
+<meta property="og:site_name" content="Holy Spirit Retreat Center" />
+		<title>July 2015 Retreats & Events</title>
 		<link rel="stylesheet" href="css/button.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/calendar.css" />
 		<script type="text/javascript" src="scripts/popups.js"></script>
-    <?php include("scripts/nav.php"); ?>
+    <?php include("scripts/global.php"); ?>
 	</head>
 	
 	<body id="tree">
-		<div class="header" />  
+		<?php show_header(); ?>  
 		
 		<div id="navi">
       <?php show_nav(); ?>
@@ -20,8 +26,8 @@
 		<div id="cal-container">
 			<div id="month-sept">
 				<font face="SymbolSignsBasisset" size="15pt"><a class="no-under" href="June.html">L</a></font>
-				&nbsp;July 2014&nbsp;
-				<!--<font face="SymbolSignsBasisset" size="15pt"><a class="no-under" href="August.html">R</a></font>-->
+				&nbsp;July 2015&nbsp;
+				<font face="SymbolSignsBasisset" size="15pt"><a class="no-under" href="August.html">R</a></font>
 			</div>
 			<table id="calendar">
 			 <tbody>
@@ -35,158 +41,207 @@
 					 <th id="weekdays">Saturday</th>
 				 </tr>
 				 <tr>
-					 <td id="emptydays">29<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
+					 <td id="emptydays">28<br/>
+             <a href="javascript: openEightDayInt()" class="cal-events" style="color: #006600;" >
              <strong>starts at 5:00pm</strong><br/>
-             8-day intensive &amp; post intensive centering prayer retreats
-             </a>	
-         	 </td>	
-					 <td id="emptydays">30<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             8-day intensive &amp; post intensive centering prayer retreats
-             </a>	
-         	 </td>	
-					 <td id="days">1<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             8-day intensive &amp; post intensive centering prayer retreats
-             </a>	
-         	 </td>
-				 	 <td id="days">2<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             8-day intensive &amp; post intensive centering prayer retreats
-             </a>	
-         	 </td>
-					 <td id="days">3<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             8-day intensive &amp; post intensive centering prayer retreats
-             </a>	<br/><br />
-              <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
-              <strong>9:30am - 11:30am</strong><br/>
-              Centering Prayer
-              </a>
-         	 </td>
-					 <td id="days">4<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             8-day intensive &amp; post intensive centering prayer retreats
-             </a>	
-         	 </td>
-					 <td id="days">5<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             8-day intensive &amp; post intensive centering prayer retreats
-             </a>	
-         	 </td>		 
+             8-Day Intensive Centering Prayer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayPost()" class="cal-events" style="color: #006600;" >
+             <strong>starts at 5:00pm</strong><br/>
+             8-Day Post-Intensive Centering Prayer Retreat
+             </a>
+           </td>	
+					 <td id="emptydays">29<br/>
+             <a href="javascript: openEightDayInt()" class="cal-events" style="color: #006600;" >
+             8-Day Intensive Centering Prayer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayPost()" class="cal-events" style="color: #006600;" >
+             8-Day Post-Intensive Centering Prayer Retreat
+             </a>
+           </td>	
+					 <td id="emptydays">30<br/>
+             <a href="javascript: openEightDayInt()" class="cal-events" style="color: #006600;" >
+             8-Day Intensive Centering Prayer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayPost()" class="cal-events" style="color: #006600;" >
+             8-Day Post-Intensive Centering Prayer Retreat
+             </a>
+           </td>	
+					 <td id="days">1<br/>
+             <a href="javascript: openEightDayInt()" class="cal-events" style="color: #006600;" >
+             8-Day Intensive Centering Prayer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayPost()" class="cal-events" style="color: #006600;" >
+             8-Day Post-Intensive Centering Prayer Retreat
+             </a>
+           </td>
+				 	 <td id="days">2<br/>
+             <a href="javascript: openEightDayInt()" class="cal-events" style="color: #006600;" >
+             8-Day Intensive Centering Prayer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayPost()" class="cal-events" style="color: #006600;" >
+             8-Day Post-Intensive Centering Prayer Retreat
+             </a>
+           </td>
+					 <td id="days">3<br/>
+             <a href="javascript: openEightDayInt()" class="cal-events" style="color: #006600;" >
+             8-Day Intensive Centering Prayer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayPost()" class="cal-events" style="color: #006600;" >
+             8-Day Post-Intensive Centering Prayer Retreat
+             </a>
+           </td>
+					 <td id="days">4<br/>
+             <a href="javascript: openEightDayInt()" class="cal-events" style="color: #006600;" >
+             8-Day Intensive Centering Prayer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayPost()" class="cal-events" style="color: #006600;" >
+             8-Day Post-Intensive Centering Prayer Retreat
+             </a>
+           </td> 
 				 </tr>
 				 <tr>
-					 <td id="days">6<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
+					 <td id="days">5<br/>
+             <a href="javascript: openEightDayInt()" class="cal-events" style="color: #006600;" >
              <strong>ends at 1:00pm</strong><br/>
-             8-day intensive &amp; post intensive centering prayer retreats
-             </a>	
-         	 </td>		
+             8-Day Intensive Centering Prayer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayPost()" class="cal-events" style="color: #006600;" >
+             8-Day Post-Intensive Centering Prayer Retreat
+             </a>
+           </td>		
+					 <td id="days">6</td>		
 					 <td id="days">7</td>	
-					 <td id="days">8<br />
-              <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
-              <strong>7:00pm - 9:00pm</strong><br/>
-              Centering Prayer
-              </a>	
-           </td>
-					 <td id="days">9</td>	
-					 <td id="days">10<br />
-                        <a href="javascript: openGospeljohn()" class="cal-events" style="color: #003399;" >
-                        <strong>9:30am - 11:30am</strong><br/>
-                        The Gospel of John: A Study Group
-                        </a>	
-                     </td>
-					 <td id="days">11</td>
-					 <td id="days">12</td>		 
+					 <td id="days">8</td>
+					 <td id="days">9<br />
+            <a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
+            <strong>9:30am - 11:30am</strong><br/>
+            Centering Prayer Group
+            </a>
+           </td>	
+					 <td id="days">10</td>
+					 <td id="days">11</td>	 
 				 </tr>
 				 <tr>
-					 <td id="days">13</td>	
-					 <td id="days">14</td>	
-					 <td id="days">15</td>
-					 <td id="days">16</td>
-					 <td id="days">17<br />
-              <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
-              <strong>9:30am - 11:30am</strong><br/>
-              Centering Prayer
-              </a>	
-           </td>
-					 <td id="days">18<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             <strong>starts at 7:00pm</strong>
-             Women at the Well Summer Retreat
-             </a>	
-         	 </td>
-					 <td id="days">19<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             Women at the Well Summer Retreat
-             </a>	
-         	 </td>
-				 </tr>
-				 <tr>
-					 <td id="days">20<br />
-             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
-             <strong>ends at 1:00pm</strong><br/>
-             Women at the Well Summer Retreat
-             </a>	<br/><br />
-             <a href="javascript: openEightDayJuly()" class="cal-events" style="color: #006600;" >
+					 <td id="days">12<br/>
+             <a href="javascript: openEightDayDir()" class="cal-events" style="color: #006600;" >
              <strong>starts at 5:00pm</strong><br/>
-             8-day directed retreat
-             </a>	
-         	 </td>
-					 <td id="days">21<br />
-             <a href="javascript: openEightDayJuly()" class="cal-events" style="color: #006600;" >
-             8-day directed retreat
-             </a>	
-         	 </td>
-					 <td id="days">22<br />
-             <a href="javascript: openEightDayJuly()" class="cal-events" style="color: #006600;" >
-             8-day directed retreat
-             </a>	<br/><br />
-              <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
-              <strong>7:00pm - 9:00pm</strong><br/>
-              Centering Prayer
-              </a>
+             8-Day Directed Retreat
+             </a>
+           </td>	
+					 <td id="days">13<br/>
+             <a href="javascript: openEightDayDir()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>	
+					 <td id="days">14<br/>
+             <a href="javascript: openEightDayDir()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a><br/><br />
+             <a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
+             <strong>7:00pm - 9:00pm</strong><br/>
+             Centering Prayer Group
+             </a>
+           </td>	
+					 <td id="days">15<br/>
+             <a href="javascript: openEightDayDir()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
+					 <td id="days">16<br/>
+             <a href="javascript: openEightDayDir()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
+					 <td id="days">17<br/>
+             <a href="javascript: openEightDayDir()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
+					 <td id="days">18<br/>
+             <a href="javascript: openEightDayDir()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
+				 </tr>
+				 <tr>
+					 <td id="days">19<br/>
+             <a href="javascript: openEightDayDir()" class="cal-events" style="color: #006600;" >
+             <strong>ends at 1:00pm</strong><br/>
+             8-Day Directed Retreat
+             </a>
+           </td>
+					 <td id="days">20</td>
+					 <td id="days">21</td>
+					 <td id="days">22<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
+             <strong>10am - 12pm</strong><br/>
+             Bridges to Contemplative Living
+             </a>
            </td>
 					 <td id="days">23<br />
-             <a href="javascript: openEightDayJuly()" class="cal-events" style="color: #006600;" >
-             8-day directed retreat
-             </a>	
-         	 </td>
-					 <td id="days">24<br />
-             <a href="javascript: openEightDayJuly()" class="cal-events" style="color: #006600;" >
-             8-day directed retreat
-             </a>	
-         	 </td>
-					 <td id="days">25<br />
-             <a href="javascript: openEightDayJuly()" class="cal-events" style="color: #006600;" >
-             8-day directed retreat
-             </a>	
-         	 </td>
-					 <td id="days">26<br />
-             <a href="javascript: openEightDayJuly()" class="cal-events" style="color: #006600;" >
-             8-day directed retreat
-             </a>	
-         	 </td>
+            <a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
+            <strong>9:30am - 11:30am</strong><br/>
+            Centering Prayer Group
+            </a>
+           </td>
+					 <td id="days">24<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
+             <strong>starts at 7:00pm</strong><br/>
+             Women at the Well Summer Retreat
+             </a>
+           </td>
+					 <td id="days">25<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
+             Women at the Well Summer Retreat
+             </a>
+           </td>
 				 </tr>
 				 <tr>
-					 <td id="days">27<br />
-             <a href="javascript: openEightDayJuly()" class="cal-events" style="color: #006600;" >
+					 <td id="days">26<br/>
+             <a href="javascript: void(0)" class="cal-events" style="color: #006600;" >
              <strong>ends at 1:00pm</strong><br/>
-             8-day directed retreat
-             </a>	
-         	 </td>
-					 <td id="days">28</td>
-					 <td id="days">29</td>
-					 <td id="days">30</td>
-					 <td id="days">31<br />
-              <a href="javascript: void(0)" class="cal-events" style="color: #003399;" >
-              <strong>9:30am - 11:30am</strong><br/>
-              Centering Prayer
-              </a>	
+             Women at the Well Summer Retreat
+             </a><br/><br/>
+             <a href="javascript: openEightDayDir2()" class="cal-events" style="color: #006600;" >
+             <strong>starts at 5:00pm</strong><br/>
+             8-Day Directed Retreat
+             </a>
            </td>
-					 <td id="emptydays">1</td>
-					 <td id="emptydays">2</td>
+					 <td id="days">27<br/>
+             <a href="javascript: openEightDayDir2()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
+					 <td id="days">28<br/>
+             <a href="javascript: openEightDayDir2()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a><br /><br />
+             <a href="javascript: openCPgroup()" class="cal-events" style="color: #003399;" >
+             <strong>7:00pm - 9:00pm</strong><br/>
+             Centering Prayer Group
+             </a>
+           </td>
+					 <td id="days">29<br/>
+             <a href="javascript: openEightDayDir2()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
+					 <td id="days">30<br/>
+             <a href="javascript: openEightDayDir2()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
+					 <td id="days">31<br/>
+             <a href="javascript: openEightDayDir2()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
+					 <td id="emptydays">1<br/>
+             <a href="javascript: openEightDayDir2()" class="cal-events" style="color: #006600;" >
+             8-Day Directed Retreat
+             </a>
+           </td>
 				 </tr>
 			 </tbody>
 			</table>
@@ -206,9 +261,7 @@
 	
 		<div class="push"></div>
 	
-		<div class="footer">
-			<a href="home.html" class="no-under">Holy Spirit Retreat Center</a> || 4316 Lanai Rd. Encino, CA 91346 || (818) 784 - 4515<br />
-			<div class="footer-foot">Website designed and maintained by Vanessa Soria</div>
-		</div><!--footer-->	
+		<!-- FOOTER -->
+  	<?php show_footer(); ?>
 	</body>
 </html>

@@ -1,0 +1,114 @@
+.header {
+  padding-bottom: 30px;
+  background-image: none;
+}
+.header img {
+  border-radius: 7px;
+}
+.footer {
+  clear: both;
+  margin-top: 64px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+.footer a {
+  display: inline-block;
+  font-size: 14px;
+}
+#navi {
+  float: left;
+  padding-right: 30px;
+  margin: 0px;
+}
+.button {
+  padding: 4px;
+  margin-bottom: 3px;
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.11;
+  text-align: center;
+  background-color: #b8b47e;
+  overflow: visible;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #CACACA;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 19px;
+}
+.button:hover {
+  background-color: #cac79f;
+  color: #000000;
+}
+#reg-button {
+  position: absolute;
+  left: 50%;
+  width: 250px;
+  margin-left: -125px;
+}
+#shaklee {
+  height: 105px!important;
+  background-color: #629B3B;
+}
+#shaklee:hover {
+  background-color: #7abb4e;
+}
+#shaklee p {
+  margin-top: 0px;
+  color: #FFFFFF;
+  text-shadow: 5px 5px 5px #383838;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.content {
+  padding: 0 10px;
+  display: block;
+  width: 714px;
+  height: auto;
+  float: left;
+}
+#center-update {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+a {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 23px;
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #009933;
+}
+.newsletter-history {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #b8b47e;
+}
+.newsletter-history h4,
+.newsletter-history img {
+  margin: 0px;
+}
+.newsletter-history h4 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.newsletter-history div p {
+  margin: 0px;
+}
+.newsletter-current {
+  margin: 0 auto;
+  width: 600px;
+}
+.newsletter-current img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}

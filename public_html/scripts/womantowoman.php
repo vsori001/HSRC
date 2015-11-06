@@ -16,7 +16,7 @@
 			$MESSAGE_BODY .= "State: ".$_POST["state"]."<br>"; 
 			$MESSAGE_BODY .= "Zip Code: ".$_POST["zip"]."<br>"; 
 			$MESSAGE_BODY .= "Dates: ";
-			$MESSAGE_BODY .= "<br>".$_POST["feb27"]." ".$_POST["mar27"]." ".$_POST["apr24"]." ".$_POST["may22"]." ".$_POST["jun26"]." ";
+			$MESSAGE_BODY .= "<br>".$_POST["sept25"]." ".$_POST["oct30"]." ".$_POST["nov20"]." ".$_POST["dec18"]." ";
 			
 			mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
 		?> 		
@@ -34,8 +34,7 @@
 		?>  		
 		<div id="php-header-intro">
 			Woman to Woman<br />
-			$45 with lunch // $35 without lunch<br/>
-      $10 deposit due with registration
+			$45 with lunch // $35 without lunch
 		</div>
 		<form action="womantowoman.php" method="post" id="events-form-weekend">
 			<table width="450" border="0" cellpadding="3" id="events-table">
@@ -72,11 +71,21 @@
 				<tr>
 					<td class="events-bodytext">
 						What dates would you like to sign up for?<br/>
-						<input type="checkbox" name="feb27" value="February 27" />February 27<br/>
-						<input type="checkbox" name="mar27" value="March 27" />March 27<br/>
-						<input type="checkbox" name="apr24" value="April 24" />April 24<br/>
-						<input type="checkbox" name="may22" value="May 22" />May 22<br/>
-						<input type="checkbox" name="jun26" value="June 26" />June 26<br/>
+            <?php if( time() < strtotime("09/25/14") ){ 
+							echo "<input type=\"checkbox\" name=\"sept25\" value=\"September 25\" />September 25<br/>";
+						} ?>
+						<?php if( time() < strtotime("10/30/14") ){ 
+							echo "<input type=\"checkbox\" name=\"oct30\" value=\"October 30\" />October 30<br/>";
+						} ?>
+						<?php if( time() < strtotime("11/20/14") ){ 
+							echo "<input type=\"checkbox\" name=\"nov20\" value=\"November 20\" />November 20<br/>";
+						} ?>
+						<?php if( time() < strtotime("12/18/14") ){ 
+							echo "<input type=\"checkbox\" name=\"dec18\" value=\"December 18\" />December 18<br/>";
+						}
+						else{
+							echo "All Dates for Laughter Yoga have passed.";
+						}?>
 					</td>
 				</tr>
 				<tr>

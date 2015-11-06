@@ -1,11 +1,14 @@
 <html>	
-	<link rel="stylesheet" href="../css/style.css" />
+	<head>
+		<link rel="stylesheet" href="../css/style.css" />
+    <title>Centering Prayer Weekend Retreat</title>
+  </head>
 	<body id="leaves" class="php-body">
 		<?php 
 		if ($_POST["email"]<>'') { 
 			$ToEmail = 'hsrcenter@earthlink.net'; 
-			$EmailSubject = 'Registration for Centering Prayer Weekend Retreat 2/22/13 - 2/24/13'; 
-			$mailheader = "From: ".$_POST["email"]."\r\n"; 
+			$EmailSubject = 'Registration for Centering Prayer Weekend Retreat 10/23/15 - 10/25/15'; 
+        $mailheader = "From: webmaster@hsrcenter.com"."\r\n"; 
 			$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 			$MESSAGE_BODY = "Name: ".$_POST["name"]."<br>"; 
@@ -20,7 +23,7 @@
 		?> 		
 		<div class="events-bodytext" id="events-returnpg">
 			Your Registration has been turned in and will be processed soon.<br />
-			A $30 deposit is due by February 14, 2013.<br /><br />
+			A $30 deposit is due by October 5, 2015.<br /><br />
 			<b>Thank you for registering for the Centering Prayer Weekend Retreat.</b><br /><br />
 			<img src="../img/grounds_sized_small.jpg" alt="parking" /><br /><br />
 			<font face="SymbolSignsBasisset">L</font>
@@ -33,8 +36,8 @@
 		?>  		
 		<div id="php-header-intro">
 			Centering Prayer Weekend Retreat<br />
-			February 22, 2013 5:00pm -<br />
-			February 24, 2013 1:00pm<br />
+			October 23, 2015 5:00pm -<br />
+			October 25, 2015 1:00pm<br />
 		</div>
 		<form action="cpWeekend.php" method="post" id="events-form-weekend">
 			<table width="450" border="0" cellpadding="3" id="events-table">
@@ -71,9 +74,9 @@
 				<tr>
 					<td class="events-bodytext">
 						What type of registration would you like to sign up for?<br/>
-						<input name="room" type="radio" value="Private Room">Private Room ($225)<br/>
-						<input name="room" type="radio" value="Shared Room">Shared Room ($180/person)<br/>
-						<input name="room" type="radio" value="Commuter">Commuter ($115 includes all meals)
+						<input name="room" type="radio" value="Private Room">Private Room ($275)<br/>
+						<input name="room" type="radio" value="Shared Room">Shared Room ($225/person)<br/>
+						<input name="room" type="radio" value="Commuter">Commuter ($150)
 					</td>
 				</tr>
 				<tr>

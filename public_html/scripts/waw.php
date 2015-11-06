@@ -16,7 +16,7 @@
 			$MESSAGE_BODY .= "State: ".$_POST["state"]."<br>"; 
 			$MESSAGE_BODY .= "Zip Code: ".$_POST["zip"]."<br>"; 
 			$MESSAGE_BODY .= "Dates: ";
-			$MESSAGE_BODY .= "<br>".$_POST["mar11"]." ".$_POST["apr8"]." ".$_POST["may13"]." ";
+			$MESSAGE_BODY .= "<br>".$_POST["apr14"]." ".$_POST["may12"]." ";
 			
 			mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
 		?> 		
@@ -71,14 +71,11 @@
 				<tr>
 					<td class="events-bodytext">
 						What dates would you like to sign up for?<br/>
-            <?php if( time() < strtotime("03/11/14") ){ 
-							echo "<input type=\"checkbox\" name=\"mar11\" value=\"March 11\" />March 11<br/>";
+            <?php if( time() < strtotime("04/14/15") ){ 
+							echo "<input type=\"checkbox\" name=\"apr14\" value=\"April 14\" />April 14<br/>";
 						} ?>
-            <?php if( time() < strtotime("04/08/14") ){ 
-							echo "<input type=\"checkbox\" name=\"apr13\" value=\"April 8\" />April 8<br/>";
-						} ?>
-            <?php if( time() < strtotime("05/13/14") ){ 
-							echo "<input type=\"checkbox\" name=\"may8\" value=\"May 13\" />May 13<br/>";
+            <?php if( time() < strtotime("05/12/15") ){ 
+							echo "<input type=\"checkbox\" name=\"may12\" value=\"May 12\" />May 12<br/>";
 						} 
 						else{
 							echo "All Dates for Women At The Well have passed.";

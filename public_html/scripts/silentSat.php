@@ -1,11 +1,14 @@
 <html>	
-	<link rel="stylesheet" href="../css/style.css" />
+	<head>
+		<link rel="stylesheet" href="../css/style.css" />
+    <title>Silent Saturday</title>
+  </head>
 	<body id="leaves">
 		<?php 
 		if ($_POST["email"]<>'') { 
 			$ToEmail = 'hsrcenter@earthlink.net'; 
-			$EmailSubject = 'Registration for Silent Saturday 2/8/14'; 
-			$mailheader = "From: ".$_POST["email"]."\r\n"; 
+			$EmailSubject = 'Registration for Silent Saturday 12/5/15'; 
+        $mailheader = "From: webmaster@hsrcenter.com"."\r\n"; 
 			$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 			$MESSAGE_BODY = "Name: ".$_POST["name"]."<br>"; 
@@ -30,10 +33,9 @@
 		} else { 
 		?> 		
 		<div id="php-header-intro">
-			Silent Saturday<br />
-			February 8, 2013<br/>
-			9:00am - 12:00pm<br />
-			Arrival 8:30am - 9:00am<br />
+			Silent Saturday<br /> 
+			December 5, 2015<br/>
+			9:00am - 11:30pm<br />
 			Free-will offering<br />
 		</div> 
 		<div class="events-form-wrapper">

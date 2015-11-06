@@ -4,7 +4,7 @@
 		<?php 
 		if ($_POST["email"]<>'') { 
 			$ToEmail = 'hsrcenter@earthlink.net'; 
-			$EmailSubject = 'Registration for the Holy Week Retreat 4/13/14 - 4/20/14'; 
+			$EmailSubject = 'Registration for the Holy Week Retreat 3/29/15 - 4/5/15'; 
 			$mailheader = "From: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
@@ -20,8 +20,7 @@
 		?> 		
 		<div class="events-bodytext" id="events-returnpg">
 			Your Registration has been turned in and will be processed soon.<br />
-			A $50 deposit for the 8 Day Retreat is due by March 17, 2014.<br />
-			A $50 deposit for the Sacred Triduum is due by March 17, 2014.<br /><br />
+			A $50 deposit is due by March 1, 2015.<br /><br />
 			<b>Thank you for registering for the Holy Week Retreat.</b><br /><br />
 			<img src="../img/grounds_sized_small.jpg" alt="parking" /><br /><br />
 			<font face="SymbolSignsBasisset">L</font>
@@ -34,8 +33,8 @@
 		?>  		
 		<div id="php-header-intro">
 			Holy Week Retreat<br />
-			April 13, 2014 5:00pm -<br />
-			April 20, 2014 11:00am<br />
+			March 29, 2015 5:00pm -<br />
+			April 5, 2015 11:00am<br />
 		</div>
 		<form action="holyWeek.php" method="post" id="events-form-weekend">
 			<table width="450" border="0" cellpadding="3" id="events-table">
@@ -72,10 +71,10 @@
 				<tr>
 					<td class="events-bodytext">
 						What type of registration would you like to sign up for?<br/>
-						<input name="room" type="radio" value="Private Room">Single Room ($500)<br/>
+						<input name="room" type="radio" value="Private Room">Private Room ($500)<br/>
 						<input name="room" type="radio" value="Commuter">Commuter ($400)<br/>
-						<input name="room" type="radio" value="Sacred Triduum Private Room">Sacred Triduum  Only ($250/private room)<br/>
-						<input name="room" type="radio" value="Sacred Triduum Commuter">Sacred Triduum Only ($125/commuter)<br/>
+						<input name="room" type="radio" value="Sacred Triduum Private Room">Sacred Triduum Only ($300/private room)<br/>
+						<input name="room" type="radio" value="Sacred Triduum Commuter">Sacred Triduum Only ($150/commuter)<br/>
 					</td>
 				</tr>
 				<tr>

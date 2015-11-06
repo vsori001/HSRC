@@ -16,7 +16,7 @@
 			$MESSAGE_BODY .= "State: ".$_POST["state"]."<br>"; 
 			$MESSAGE_BODY .= "Zip Code: ".$_POST["zip"]."<br>"; 
 			$MESSAGE_BODY .= "Dates: ";
-			$MESSAGE_BODY .= "<br>".$_POST["apr3"]." ".$_POST["may1"]." ".$_POST["jun12"]." ".$_POST["jul10"]." ";
+			$MESSAGE_BODY .= "<br>".$_POST["sept18"]." ".$_POST["oct16"]." ".$_POST["nov13"]." ".$_POST["dec11"]." ";
 			
 			mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
 		?> 		
@@ -73,17 +73,17 @@
 				<tr>
 					<td class="events-bodytext">
 						What dates would you like to sign up for?<br/>
-            <?php if( time() < strtotime("04/03/14") ){ 
-							echo "<input type=\"checkbox\" name=\"apr3\" value=\April 3\" />April 3<br/>";
+            <?php if( time() < strtotime("09/18/14") ){ 
+							echo "<input type=\"checkbox\" name=\"sept18\" value=\September 18\" />September 18<br/>";
 						} ?>
-            <?php if( time() < strtotime("05/01/14") ){ 
-							echo "<input type=\"checkbox\" name=\"may1\" value=\"May 1\" />May 1<br/>";
+            <?php if( time() < strtotime("10/16/14") ){ 
+							echo "<input type=\"checkbox\" name=\"oct16\" value=\"October 16\" />October 16<br/>";
 						} ?>
-            <?php if( time() < strtotime("06/12/14") ){ 
-							echo "<input type=\"checkbox\" name=\"jun12\" value=\"June 12\" />June 12<br/>";
+            <?php if( time() < strtotime("11/13/14") ){ 
+							echo "<input type=\"checkbox\" name=\"nov13\" value=\"November 13\" />November 13<br/>";
 						} ?>
-            <?php if( time() < strtotime("06/12/14") ){ 
-							echo "<input type=\"checkbox\" name=\"jul10\" value=\"July 10\" />July 10<br/>";
+            <?php if( time() < strtotime("12/11/14") ){ 
+							echo "<input type=\"checkbox\" name=\"dec11\" value=\"December 11\" />December 11<br/>";
 						}
 						else{
 							echo "All Dates for The Gospel of John have passed.";

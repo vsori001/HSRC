@@ -1,90 +1,102 @@
+<?php 
+	$retreat = "New Year Retreat. The Wolf You Feed 12/30/15 - 1/1/15";
+?>
 <html>	
 	<link rel="stylesheet" href="../css/style.css" />
-	<body id="leaves" class="php-body">
-		<?php 
-		if ($_POST["email"]<>'') { 
-			$ToEmail = 'hsrcenter@earthlink.net'; 
-			$EmailSubject = 'Registration for New Year Retreat 12/30/13 - 1/1/13'; 
-			$mailheader = "From: ".$_POST["email"]."\r\n"; 
-			$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
-			$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-			$MESSAGE_BODY = "Name: ".$_POST["name"]."<br>"; 
-			$MESSAGE_BODY .= "Email: ".$_POST["email"]."<br>"; 
-			$MESSAGE_BODY .= "Phone Number: ".$_POST["number"]."<br>"; 
-			$MESSAGE_BODY .= "Street Address: ".$_POST["street"]."<br>";
-			$MESSAGE_BODY .= "City: ".$_POST["city"]."<br>";  
-			$MESSAGE_BODY .= "State: ".$_POST["state"]."<br>"; 
-			$MESSAGE_BODY .= "Zip Code: ".$_POST["zip"]."<br>"; 
-			$MESSAGE_BODY .= "Private, Shared, Commuter?: ".$_POST["room"]."<br>";
-			mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
-		?> 		
-		<div class="events-bodytext" id="events-returnpg">
-			Your Registration has been turned in and will be processed soon.<br />
-			A $30 deposit is due by December 15, 2013.<br /><br />
-			<b>Thank you for registering for the New Year Retreat.</b><br /><br />
-			<img src="../img/grounds_sized_small.jpg" alt="parking" /><br /><br />
-			<font face="SymbolSignsBasisset">L</font>
-			<a class="no-under" href="javascript: window.close()" class="bodytext">
-				Go back to the Calendar
-			</a>
-		</div>
-		<?php 
-		} else { 
-		?> 		
-		<div id="php-header-shining">
-			New Year&#8217;s Retreat<br />
-			"Gratitude"<br />
-			December 30, 2013 - January 1, 2014
-		</div> 
-		<form action="newyear.php" method="post" id="events-form-weekend">
-			<table width="450" border="0" cellpadding="3" id="events-table">
-				<tr>
-					<td class="events-bodytext">
-						Name
-						<input name="name" type="text" id="name" size="32">
-					</td>
-				</tr>
-				<tr>
-					<td class="events-bodytext">
-						Email address
-						<input name="email" type="text" id="email" size="32">
-					</td>
-				</tr>
-				<tr>
-					<td class="events-bodytext">
-						Phone Number <input name="number" type="text" id="number" size="11">
-					</td>
-				</tr>
-				<tr>
-					<td class="events-bodytext">
-						Street Address
-						<input name="street" type="text" id="street" size="32">
-					</td>
-				</tr>
-				<tr>
-					<td class="events-bodytext">
-						City <input name="city" type="text" id="city" size="20">
-						State <input name="state" type="text" id="state" size="4">
-						Zip Code <input name="zip" type="text" id="zip" size="5">
-					</td>
-				</tr>
-				<tr>
-					<td class="events-bodytext">
-						What type of registration would you like to sign up for?<br/>
-						Private Room ($225)<input name="room" type="radio" value="Private Room"><br/>
-						Shared Room ($200/person)<input name="room" type="radio" value="Shared Room"><br/>
-						Commuter ($125 includes all meals)<input name="room" type="radio" value="Commuter">
-					</td>
-				</tr>
-				<tr>
-					<td align="left" valign="top">
-						<input type="submit" name="Submit" value="Register!">
-					</td>
-				</tr>
-			</table>
-			</form> 
-		<?php 
-		}; 
-		?>
+	<link rel="stylesheet" href="../css/signup.css" />
+	<body class="signup">
+  	<div class="content">
+			<?php 
+      if ($_POST["email"]<>'') { 
+        $ToEmail = 'hrcenter@earthlink.net'; 
+        $EmailSubject = 'Registration for '. $retreat; 
+        $mailheader = "From: webmaster@hsrcenter.com"."\r\n"; 
+        $mailheader .= "Reply-To: donotreply@hsrcenter.com"."\r\n"; 
+        $mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+        $MESSAGE_BODY = '<strong>Registration for '. $retreat .'</strong><br/><br/>'; 
+        $MESSAGE_BODY .= "<strong>Name:</strong> ".$_POST["name"]."<br>"; 
+        $MESSAGE_BODY .= "<strong>Email:</strong> ".$_POST["email"]."<br>"; 
+        $MESSAGE_BODY .= "<strong>Phone Number:</strong> ".$_POST["number"]."<br>"; 
+        $MESSAGE_BODY .= "<strong>Street Address:</strong> ".$_POST["street"]."<br>";
+        $MESSAGE_BODY .= "<strong>City:</strong> ".$_POST["city"]."<br>";  
+        $MESSAGE_BODY .= "<strong>State:</strong> ".$_POST["state"]."<br>"; 
+        $MESSAGE_BODY .= "<strong>Zip Code:</strong> ".$_POST["zip"]."<br>"; 
+        $MESSAGE_BODY .= "<strong>Room Type:</strong> ".$_POST["room"]."<br>";
+        mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
+      ?> 		
+      <div id="events-returnpg">
+        Your Registration has been turned in and will be processed soon.<br />
+        A $30 non-refundable deposit is due by December 27.<br /><br />
+        <b>Thank you for registering for <?php echo $retreat; ?></b>
+        <img src="../img/grounds_sized_small.jpg" alt="parking" /><br /><br />
+        <font face="SymbolSignsBasisset">L</font>
+        <a class="no-under" href="javascript: window.close()" class="bodytext">
+          Go back to the Calendar
+        </a>
+      </div>
+      <?php 
+      } else { 
+      ?> 		
+      <div id="php-header-intro">
+        <img src="../img/events/2015/december/wolf/wolf.gif" width="600" height="453" />
+      </div> 
+      <form action="newyear.php" method="post">
+        <table border="0" id="events-table">
+          <tr>
+            <td class="name">
+              <label>Name</label>
+              <input name="name" type="text" id="name">
+            </td>
+          </tr>
+          <tr>
+            <td class="address">
+              <label>Street Address</label>
+              <input name="street" type="text" id="street">
+            </td>
+          </tr>
+          <tr>
+            <td class="city-state-zip">
+              <label>City</label> <input name="city" type="text" id="city">
+            </td>
+          </tr>
+          <tr>
+            <td class="city-state-zip">
+              <label>State</label> <input name="state" type="text" id="state">
+            </td>
+          </tr>
+          <tr>
+            <td class="city-state-zip">
+              <label>Zip Code</label> <input name="zip" type="text" id="zip">
+            </td>
+          </tr>
+          <tr>
+            <td class="email">
+              <label>Email address</label> <input name="email" type="text" id="email">
+            </td>
+          </tr>
+          <tr>
+            <td class="phonenumber">
+              <label>Phone Number</label> <input name="number" type="text" id="number">
+            </td>
+          </tr>
+          <tr>
+            <td class="options">
+              <label>Room Type?</label>
+              <input name="room" type="radio" value="Single"> <p>Single</p>
+              <input name="room" type="radio" value="Shared"> <p>Shared</p>
+              <input name="room" type="radio" value="Commuter"> <p>Commuter</p>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <input type="submit" name="Submit" value="Register!">
+            </td>
+          </tr>
+        </table>
+      </form>
+      <?php 
+      }; 
+      ?>
+    </div>
 	</body>
 </html>

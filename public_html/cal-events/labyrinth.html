@@ -5,11 +5,33 @@
 		<title>Labyrinth Walk</title>
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/calendar.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
 	</head>
 	
 	<body>
-		<div id="events-img-lab">
-			<img src="../img/events/labyrinthwalks_7-001.jpg" />
-		</div>
+		<div id="events-img-lab" class="eventsIMG events-img"></div>
+    
+    <script type="text/javascript">
+				var d = new Date();
+				var month = d.getMonth();
+				var day = d.getDate();
+				if( month <= 8 ){
+					if( month < 8 ){
+						$("#events-img-lab").append("<img src=\"../img/events/2014/september/labyrinths/septLabyrinthFlyer.gif\" width=\"600\" height=\"339\" />");
+					}
+					else if( month == 8 && day <= 22 ){
+						$("#events-img-lab").append("<img src=\"../img/events/2014/september/labyrinths/septLabyrinthFlyer.gif\" width=\"600\" height=\"339\" />");
+					}
+					else{
+						$("#events-img-lab").append("<img src=\"../img/events/2014/september/labyrinths/septLabyrinthFlyer.gif\" width=\"574\" height=\"306\" />");
+					}
+				}
+				else if( month > 8 && month <= 11 ){
+					if( month <= 11 && day <= 21 ){
+						$("#events-img-lab").append("<img src=\"../img/events/2014/september/labyrinths/decLabyrinthFlyer.gif\" width=\"574\" height=\"306\" />");
+					}
+				}
+		</script>
 	</body>
 </html>

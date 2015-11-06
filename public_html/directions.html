@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Holy Spirit Retreat Center" />
+<meta property="og:description" content="Holy Spirit Retreat Center, as a chartered ministry of the Sisters of Social Service, is rooted in Scripture and the vision and spirit of Saint Benedict. We strive to create an atmosphere of prayer and hospitality where community is nourished, each person can thrive and an interfaith environment is fostered." />
+<meta property="og:url" content="http://www.hsrcenter.com/" />
+<meta property="og:site_name" content="Holy Spirit Retreat Center" />
 		<title>Directions - Holy Spirit Retreat Center</title>
 		<link rel="stylesheet" href="css/button.css" />
 		<link rel="stylesheet" href="css/style.css" />
-    <?php include("scripts/nav.php"); ?>
+    <?php include("scripts/global.php"); ?>
 	</head>
 	
 	<body id="leaves">
-		<div class="header" />  
+		<?php show_header(); ?>  
 		
 		<div id="navi">
       <?php show_nav(); ?>
@@ -20,10 +26,8 @@
 			<small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=4316+Lanai+Road,+Encino,+CA&amp;sll=34.148483,-118.491948&amp;sspn=0.008044,0.021136&amp;ie=UTF8&amp;hq=&amp;hnear=4316+Lanai+Rd,+Los+Angeles,+California+91436&amp;ll=34.148465,-118.49184&amp;spn=0.034095,0.054932&amp;z=14&amp;iwloc=A" style="color: #0000ff; text-align: left;">View Larger Map</a></small>
 		</div>
 		
-		<div class="footer">
-			<a href="home.html" class="no-under">Holy Spirit Retreat Center</a> || 4316 Lanai Rd. Encino, CA 91346 || (818) 784 - 4515<br />
-			<div class="footer-foot">Website designed and maintained by Vanessa Soria</div>
-		</div><!--footer-->	
+		<!-- FOOTER -->
+  	<?php show_footer(); ?>
 	
 	</body>
 </html>

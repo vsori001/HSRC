@@ -4,7 +4,7 @@
 		<?php 
 		if ($_POST["email"]<>'') { 
 			$ToEmail = 'hsrcenter@earthlink.net'; 
-			$EmailSubject = 'Registration for 8-Day Directed Retreat 6/16/13 - 6/23/13'; 
+			$EmailSubject = 'Registration for 8-Day Directed Retreat 7/12/15 - 7/19/15'; 
 			$mailheader = "From: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
 			$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
@@ -19,7 +19,7 @@
 		?> 		
 		<div class="events-bodytext" id="events-returnpg">
 			Your Registration has been turned in and will be processed soon.<br />
-			A $50 deposit is due by June 1, 2013.<br /><br />
+			A $50 deposit is due by June 15, 2015.<br /><br />
 			<b>Thank you for registering for the 8-Day Directed Retreat.</b><br /><br />
 			<img src="../img/grounds_sized_small.jpg" alt="parking" /><br /><br />
 			<font face="SymbolSignsBasisset">L</font>
@@ -33,8 +33,8 @@
 		<div id="php-header-intro">
 			8-Day Directed Retreat<br />
 			**Private Bedrooms Only - $500**<br />
-			June 16, 2013 5:00pm -<br />
-			June 23, 2013 1:00pm<br />
+			July 12, 2015 5:00pm -<br />
+			July 19, 2015 1:00pm<br />
 		</div>
 		<form action="eightDayDir.php" method="post" id="events-form-weekend">
 			<table width="450" border="0" cellpadding="3" id="events-table">
